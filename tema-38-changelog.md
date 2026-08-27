@@ -21,7 +21,7 @@ Generación completa del tema desde el esqueleto oficial `Test_Prompting/temas a
 
 ### Decisiones de generación
 
-1. **Estructura literal del esqueleto, sin ajustes.** Los 5 bloques, los 17 subapartados y los 16 epígrafes del esqueleto se corresponden uno a uno con los tres niveles de numeración. Es el **tercer esqueleto de la serie de agosto que encaja sin retoques**, tras T34 y T35, y no repite el problema de mapeo de T27, T30 y T33.
+1. **Estructura literal del esqueleto, sin ajustes.** Los 5 bloques, los 17 subapartados y los 16 epígrafes del esqueleto se corresponden uno a uno con los tres niveles de numeración. Es el **cuarto esqueleto de la serie de agosto que encaja sin retoques**, tras T34, T35 y T37, y no repite el problema de mapeo de T27, T30 y T33.
 
 2. **⚠️ Hallazgo normativo de la verificación de fuentes: el CNAF vigente ya no es el de 2021.** Al contrastar las bandas contra el BOE —y no contra fuentes secundarias— se detectó que la **Orden ETD/1449/2021, de 16 de diciembre**, que citan todos los temarios en circulación, fue **derogada con efectos de 18 de julio de 2026** por la **Orden TDF/732/2026, de 10 de julio** (BOE núm. 173, de 17-7-2026, 349 páginas), que incorpora las previsiones de la **CMR-2023**, en vigor en su mayoría desde el 1 de enero de 2025. El tema cita ya la orden vigente. **Debe revisarse si otros temas de la serie citan el CNAF derogado** — el T33 es el candidato más probable.
 

@@ -19,12 +19,12 @@ El enunciado oficial (BOAM 10.032, tema 38) es el **único de los cuarenta que s
 | Servicios y seguridad en sistemas TETRA | §4 | ✅ Completo |
 | Ámbito público, normativa y evolución tecnológica | §5 | ✅ Completo |
 
-**Mapeo del esqueleto: sin ningún ajuste.** Los **5** bloques de primer nivel del esqueleto se corresponden con las 5 secciones; sus **17** subapartados, con la numeración `N.M`; y sus **16** epígrafes de tercer nivel, con la numeración `N.M.K`. Es el **tercer esqueleto de la serie de agosto que encaja sin retoques en los tres niveles**, tras el T34 y el T35, y no repite el problema de mapeo de los Temas 27, 30 y 33 —que sigue pendiente de decidir de forma uniforme para toda la serie—.
+**Mapeo del esqueleto: sin ningún ajuste.** Los **5** bloques de primer nivel del esqueleto se corresponden con las 5 secciones; sus **17** subapartados, con la numeración `N.M`; y sus **16** epígrafes de tercer nivel, con la numeración `N.M.K`. Es el **cuarto esqueleto de la serie de agosto que encaja sin retoques en los tres niveles**, tras el T34, el T35 y el T37, y no repite el problema de mapeo de los Temas 27, 30 y 33 —que sigue pendiente de decidir de forma uniforme para toda la serie—.
 
 ## 2. Contenido teórico
 
 - **5 secciones · 17 subsecciones · 16 epígrafes numerados** (numeración de tres niveles, coherente con el resto de la serie técnica).
-- **≈ 22.800 palabras** medidas con `wc -w`. Es el **tercer tema más extenso de la serie**, por detrás de T32 (≈25.000) y T33 (≈24.500) y por delante de T34 (≈21.500), T29 (≈21.200) y T30 (≈21.400).
+- **≈ 22.800 palabras** medidas con `wc -w`. Es el **cuarto tema más extenso de la serie**, por detrás de T32 (≈25.000), T33 (≈24.500) y T37 (≈23.000), y por delante de T34 (≈21.500), T30 (≈21.400) y T29 (≈21.200).
 - **4 tipos de callout**: `[DATO CLAVE EXAMEN]` (50), `[EJERCICIO RESUELTO]` (6), `[EJEMPLO AYTO MADRID]` (14) y `[REFERENCIA CRUZADA]` (13).
 - **Caso de referencia transversal**: la **red DIMETRA-TETRA municipal** gobernada desde el **CISEM**, que atraviesa las cinco secciones y enlaza con los tres casos prácticos.
 - **Sin fragmentos de código**, como en T26, T28, T29, T30, T31, T32, T33, T34 y T35. Decisión deliberada y evidente en este tema: el enunciado no menciona ningún lenguaje y lo memorizable son **cifras de la capa física, bandas de frecuencia, siglas, números de norma y preceptos legales**, concentrados en tablas y en los diagramas D9, D10, D12 y D16.
