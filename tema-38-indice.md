@@ -46,7 +46,7 @@
    4.3.2. Cifrado en la interfaz aire
    4.3.3. Cifrado extremo a extremo (E2EE)
 
-5. **Ámbito público, normativa y evolución tecnológica**
+5. **Ámbito público, normativa y evolución tecnológica (material complementario)**
    5.1. Uso de TETRA en servicios de emergencia y seguridad pública
    5.2. Marco normativo y regulación del espectro radioeléctrico
    5.3. Requisitos de disponibilidad, resiliencia y calidad de servicio (QoS)

@@ -839,6 +839,8 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 ---
 ## 5. Ámbito público, normativa y evolución tecnológica
 
+> **Material complementario.** El enunciado oficial de este tema no nombra este apartado. Se mantiene porque sitúa la materia en el Ayuntamiento y en la normativa que le aplica, pero lo exigible es lo que enumera el título del tema.
+
 ### 5.1. Uso de TETRA en servicios de emergencia y seguridad pública
 
 **Por qué TETRA se impuso en este sector.** Las funciones descritas en §4 no son adornos: cada una responde a una necesidad operativa que la telefonía comercial no cubre. Puestas en fila, explican la elección:
