@@ -38,7 +38,7 @@
 ## D1 · Cuatro generaciones de radio profesional
 
 **Sección**: §1.1 — Concepto y evolución de la radiocomunicación móvil privada (PMR)
-**Propósito**: Situar TETRA en la **tercera** generación y fijar qué problema resuelve cada etapa, que es la forma en que se pregunta esta materia.
+**Propósito**: Situar TETRA en la **tercera** generación y fijar qué problema resuelve cada etapa.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img" aria-label="Línea del tiempo con las cuatro generaciones de la radio móvil privada: la analógica convencional con un canal fijo por colectivo, el trunking analógico con MPT mil trescientos veintisiete, el trunking digital al que pertenecen TETRA, TETRAPOL, P25 y DMR, y la banda ancha crítica con MCPTT del 3GPP. Debajo se indica qué deja sin resolver cada etapa y se concluye que TETRA pertenece a la tercera generación">
@@ -130,7 +130,7 @@
   <text x="503" y="136" text-anchor="middle" class="d2">4 portadoras × 4 intervalos = 16 canales físicos.</text>
   <text x="503" y="149" text-anchor="middle" class="d2">Menos 1 de control = 15 canales de tráfico,</text>
   <text x="503" y="162" text-anchor="middle" class="d2">repartidos entre TODOS los grupos.</text>
-  <text x="20" y="198" class="k2">Y LA CONSECUENCIA QUE MÁS SE PREGUNTA</text>
+  <text x="20" y="198" class="k2">Y LA CONSECUENCIA CLAVE</text>
   <rect x="20" y="206" width="200" height="66" rx="4" fill="#f1f5f9" stroke="#c9d6e2"/>
   <text x="120" y="224" text-anchor="middle" class="b2">El grupo es LÓGICO</text>
   <text x="120" y="240" text-anchor="middle" class="d2">No es una frecuencia: es una</text>
@@ -157,7 +157,7 @@
 ## D3 · La familia de normas TETRA del ETSI
 
 **Sección**: §1.3 — Estandarización de TETRA por el ETSI
-**Propósito**: Ordenar las series de normas para poder responder «qué norma regula qué», que es la forma habitual de la pregunta.
+**Propósito**: Ordenar las series de normas para poder responder «qué norma regula qué».
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 324" role="img" aria-label="Mapa de la familia de normas TETRA del ETSI. La serie EN 300 392 regula el modo troncalizado voz más datos, con la parte 1 de diseño general, la parte 2 del interfaz aire, la parte 3 de la interfaz entre sistemas, la parte 4 de pasarelas, la parte 5 del interfaz de equipo periférico, la parte 7 de seguridad y las partes 9 a 12 de servicios suplementarios. La serie EN 300 396 regula el modo directo. Además, EN 300 394 de pruebas de conformidad, EN 300 395 del códec de voz, EN 300 812 del módulo de identidad, TR 102 580 de TEDS y TS 104 053 de los algoritmos de cifrado">
@@ -303,7 +303,7 @@
 ## D5 · La SwMI por dentro: qué hace cada bloque
 
 **Sección**: §2.1.2 — Nodos de conmutación y control de red · §2.1.3 — Centros de gestión
-**Propósito**: Separar las tres capas de la infraestructura fija —radio, conmutación y gestión— porque los casos prácticos suelen preguntar por la tercera, que es la que se olvida.
+**Propósito**: Separar las tres capas de la infraestructura fija —radio, conmutación y gestión— porque la tercera es la que se olvida.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-label="Las tres capas de la infraestructura fija de una red TETRA. La capa de radio, con las estaciones base, el canal de control principal, el traspaso entre células y el repliegue local. La capa de conmutación y control, con el encaminamiento de llamadas de grupo, la gestión de movilidad, las bases de datos de abonados, el centro de autenticación y la gestión de prioridades. Y la capa de gestión y despacho, con el sistema de gestión de red, la gestión de abonados y grupos, las consolas de despacho, la grabación y la gestión de claves criptográficas">
@@ -621,7 +621,7 @@
   <text x="278" y="204" class="t11">π/4 — desplazamiento adicional de 45 grados</text>
   <text x="278" y="219" class="s11">Evita el paso por el origen: la envolvente nunca cae a cero</text>
   <rect x="20" y="244" width="648" height="52" rx="5" fill="#e89822"/>
-  <text x="36" y="264" class="t11">COMPARACIÓN QUE SE PREGUNTA</text>
+  <text x="36" y="264" class="t11">COMPARACIÓN CLAVE</text>
   <text x="36" y="281" class="s11">TETRA: π/4-DQPSK, 2 bits por símbolo, 18 kbaudios en 25 kHz · TETRAPOL y GSM: GMSK, envolvente constante, 1 bit por símbolo</text>
   <text x="670" y="316" text-anchor="end" class="n11">[Fuente: elaboración propia sobre ETSI EN 300 392-2 e Informe UIT-R M.2014]</text>
 </svg>
@@ -632,7 +632,7 @@
 ## D12 · Jerarquía temporal: intervalo, trama, multitrama e hipertrama
 
 **Sección**: §3.4 — Estructura de trama radio y canales lógicos
-**Propósito**: Es el bloque de cifras más preguntado del tema. El diagrama las anida de menor a mayor y señala la trama 18.
+**Propósito**: Es el bloque de cifras central del tema. El diagrama las anida de menor a mayor y señala la trama 18.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 334" role="img" aria-label="Jerarquía temporal del interfaz aire de TETRA. El intervalo de tiempo dura 14,167 milisegundos. Cuatro intervalos forman una trama de 56,67 milisegundos. Dieciocho tramas forman una multitrama de 1,02 segundos, y la trama número 18 se reserva para señalización. Sesenta multitramas forman una hipertrama de 61,2 segundos, cuyo número interviene en la generación del flujo de clave del cifrado del interfaz aire">
@@ -687,7 +687,7 @@
 ## D13 · Canales lógicos: control y tráfico
 
 **Sección**: §3.4 — Estructura de trama radio y canales lógicos
-**Propósito**: Separar canal **físico** de canal **lógico** y ordenar las dos familias, que es la forma en que se pregunta esta materia.
+**Propósito**: Separar canal **físico** de canal **lógico** y ordenar las dos familias.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 328" role="img" aria-label="Clasificación de los canales lógicos de TETRA. La familia de canales de control incluye el BCCH de difusión con sus variantes BNCH de red y BSCH de sincronización, el LCH de linealización, el SCH de señalización con sus variantes completa y de medio intervalo, el ACCH asociado a una llamada en curso con las variantes rápida y lenta, y el STCH que roba capacidad al tráfico. La familia de canales de tráfico incluye el TCH de voz a 7,2 kilobits por segundo y los de datos a 7,2 sin protección, 4,8 con protección baja y 2,4 con protección alta">

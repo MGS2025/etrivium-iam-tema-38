@@ -16,18 +16,18 @@
 
 Este tema incluye cuatro tipos de **cajas callout** para facilitar el estudio:
 
-> **[DATO CLAVE EXAMEN]** Información de alta densidad memorística, con alta probabilidad de aparecer en el test oficial: cifras de la capa física, siglas, números de norma, bandas de frecuencia y preceptos legales.
+> **[DATO CLAVE]** Información de alta densidad memorística: cifras de la capa física, siglas, números de norma, bandas de frecuencia y preceptos legales.
 
 > **[EJERCICIO RESUELTO]** Problema con solución paso a paso: calcular una capacidad, dimensionar una cobertura, decidir un modo de operación, leer una tabla del CNAF.
 
-> **[EJEMPLO AYTO MADRID]** Aplicación real de la teoría al entorno municipal (la red DIMETRA-TETRA del Ayuntamiento, el CISEM, la Policía Municipal, SAMUR-Protección Civil, Bomberos y el IAM).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Aplicación real de la teoría al entorno municipal (la red DIMETRA-TETRA del Ayuntamiento, el CISEM, la Policía Municipal, SAMUR-Protección Civil, Bomberos y el IAM).
 
-> **[REFERENCIA CRUZADA]** Enlace conceptual a otros temas del temario oficial.
+> **[RELACIÓN CON OTROS TEMAS]** Enlace conceptual a otros temas del temario oficial.
 
 **Aviso sobre el enunciado, y conviene empezar por él.** El título oficial de este tema es el único de los cuarenta que se dedica **a un solo sistema concreto**. Los demás temas técnicos describen familias de tecnologías —sistemas operativos, bases de datos, redes locales—; aquí se pide **una tecnología con nombre propio, un fabricante de norma con nombre propio (el ETSI) y un conjunto cerrado de especificaciones**. Eso tiene dos consecuencias prácticas para quien estudia:
 
-1. **El examen puede bajar al detalle numérico sin remordimiento.** En un tema de «redes locales» nadie pregunta el número exacto de bits de una ráfaga; en un tema de TETRA sí se pregunta cuántos intervalos hay por portadora, cuánto dura una multitrama o qué banda reserva el CNAF a los servicios de emergencia. **Este es un tema de datos exactos.**
-2. **El enunciado incluye la traducción de las siglas y lo hace mal a propósito.** Dice «*Trans European Trunked Radio* **o** *TErrestrial Trunked RAdio*» porque **ambas expansiones han sido oficiales en momentos distintos**, y saber cuál es la vigente y por qué cambió es, en sí mismo, materia de pregunta. Se explica en §1.3.
+1. **El tema exige retener el detalle numérico.** En un tema de «redes locales» el número exacto de bits de una ráfaga es secundario; en un tema de TETRA son datos centrales cuántos intervalos hay por portadora, cuánto dura una multitrama o qué banda reserva el CNAF a los servicios de emergencia. **Este es un tema de datos exactos.**
+2. **El enunciado incluye la traducción de las siglas y lo hace mal a propósito.** Dice «*Trans European Trunked Radio* **o** *TErrestrial Trunked RAdio*» porque **ambas expansiones han sido oficiales en momentos distintos**, y conviene saber cuál es la vigente y por qué cambió. Se explica en §1.3.
 
 **Fronteras con otros temas.** TETRA toca materias que el temario reparte en otros enunciados. El criterio seguido aquí es el siguiente:
 
@@ -60,7 +60,7 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 - **La red es propia y su disponibilidad es un requisito, no una expectativa.** El operador de una red PMR decide dónde pone las estaciones base, cuánta batería les instala y a quién da prioridad. Una red pública no ofrece ninguna de esas tres cosas.
 - **El terminal es un instrumento de trabajo, no un objeto de consumo.** Robusto, con botón de emergencia, manejable con guantes, con autonomía de una jornada larga y audible en un entorno ruidoso.
 
-> **[DATO CLAVE EXAMEN]** Las cuatro diferencias que definen la PMR frente a la telefonía celular pública: **(1) comunicación de grupo** como modo principal, **(2)** *push-to-talk* **semidúplex**, **(3) establecimiento de llamada inferior a 300 ms** y **(4) red propia con disponibilidad y prioridad garantizadas por su titular**. A ellas se añade una quinta, propia de los sistemas digitales modernos: **(5) funcionamiento sin infraestructura** (modo directo), imposible en telefonía celular.
+> **[DATO CLAVE]** Las cuatro diferencias que definen la PMR frente a la telefonía celular pública: **(1) comunicación de grupo** como modo principal, **(2)** *push-to-talk* **semidúplex**, **(3) establecimiento de llamada inferior a 300 ms** y **(4) red propia con disponibilidad y prioridad garantizadas por su titular**. A ellas se añade una quinta, propia de los sistemas digitales modernos: **(5) funcionamiento sin infraestructura** (modo directo), imposible en telefonía celular.
 
 **Las cuatro generaciones de la PMR.** La evolución de estos sistemas se cuenta bien en cuatro etapas, y cada una resuelve el problema que la anterior dejaba abierto.
 
@@ -72,11 +72,11 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 
 **Cuarta etapa: la banda ancha crítica (desde 2016).** Las funciones de misión crítica —el *push-to-talk* de grupo, la prioridad, el desalojo, el modo directo— se llevan a redes de **banda ancha** basadas en LTE y 5G mediante los estándares **MCPTT**, **MCData** y **MCVideo** del **3GPP**. No sustituyen a TETRA de un día para otro: conviven con él durante años. Se desarrolla en §5.4.
 
-> **[DATO CLAVE EXAMEN]** Secuencia de las cuatro etapas de la PMR: **analógica convencional → *trunking* analógico (MPT-1327) → *trunking* digital (TETRA, TETRAPOL, P25, DMR) → banda ancha crítica (MCPTT del 3GPP)**. TETRA pertenece a la **tercera**. Una pregunta frecuente pide situar TETRA en esta escala o identificar el sistema **analógico** de la segunda: es **MPT-1327**, no TETRA.
+> **[DATO CLAVE]** Secuencia de las cuatro etapas de la PMR: **analógica convencional → *trunking* analógico (MPT-1327) → *trunking* digital (TETRA, TETRAPOL, P25, DMR) → banda ancha crítica (MCPTT del 3GPP)**. TETRA pertenece a la **tercera**. Conviene saber situar TETRA en esta escala e identificar el sistema **analógico** de la segunda: es **MPT-1327**, no TETRA.
 
-**Un matiz de vocabulario que se pregunta.** Junto a **PMR** aparece **PAMR** (*Public Access Mobile Radio*): es la misma tecnología, pero explotada por **un operador comercial** que vende el servicio a terceros, en lugar de por el propio colectivo usuario. La distinción es jurídica más que técnica y tiene consecuencias directas en el título habilitante que hace falta para usar el espectro (§5.2). En el CNAF español ambas aparecen juntas, como «**sistemas móviles digitales de banda estrecha PMR/PAMR**» `[CNAF]`.
+**Un matiz de vocabulario.** Junto a **PMR** aparece **PAMR** (*Public Access Mobile Radio*): es la misma tecnología, pero explotada por **un operador comercial** que vende el servicio a terceros, en lugar de por el propio colectivo usuario. La distinción es jurídica más que técnica y tiene consecuencias directas en el título habilitante que hace falta para usar el espectro (§5.2). En el CNAF español ambas aparecen juntas, como «**sistemas móviles digitales de banda estrecha PMR/PAMR**» `[CNAF]`.
 
-> **[REFERENCIA CRUZADA]** El **Tema 33** («Comunicaciones… comunicaciones móviles e inalámbricas») presenta el panorama general de los sistemas móviles, incluida la telefonía celular. Este tema **no repite** esa panorámica: entra directamente en el sistema que el enunciado nombra. Los conceptos de modulación digital y de multiplexación que aquí se dan por conocidos están en el **Tema 33**; los de capa física y capa de enlace, en el **Tema 34**.
+> **[RELACIÓN CON OTROS TEMAS]** El **Tema 33** («Comunicaciones… comunicaciones móviles e inalámbricas») presenta el panorama general de los sistemas móviles, incluida la telefonía celular. Este tema **no repite** esa panorámica: entra directamente en el sistema que el enunciado nombra. Los conceptos de modulación digital y de multiplexación que aquí se dan por conocidos están en el **Tema 33**; los de capa física y capa de enlace, en el **Tema 34**.
 
 **Dónde se usa hoy la PMR digital.** Conviene tener presente el mapa de usuarios, porque explica por qué el estándar tiene las funciones que tiene: **seguridad pública** (policía, bomberos, emergencias sanitarias, protección civil), **transporte** (metros, ferrocarriles, aeropuertos, puertos, autobuses urbanos, taxis), **energía y agua** (redes eléctricas, gasistas, empresas de abastecimiento), **industria** (minería, petroquímica, grandes plantas), **defensa** y **grandes eventos y recintos** (estadios, ferias, hospitales, centros comerciales). Según la **TCCA**, TETRA está desplegado en **más de 124 países** `[TCCA-GLOBAL]`.
 
@@ -86,7 +86,7 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 
 **La solución.** Un sistema **troncalizado** (*trunked*) mantiene los ocho canales, pero **no los asigna a nadie de forma permanente**. Los reúne en una **bolsa común** y los reparte **conversación a conversación**: cuando un agente aprieta el botón, un **canal de control** —una portadora que el sistema dedica exclusivamente a señalización— recibe la petición, comprueba a qué grupo pertenece el usuario, busca un canal de tráfico libre y **se lo asigna solo mientras dura esa transmisión**. Al soltar el botón, el canal **vuelve a la bolsa**.
 
-> **[DATO CLAVE EXAMEN]** *Trunking* significa **asignación dinámica de canales bajo demanda desde una bolsa común**, gestionada por un **canal de control** dedicado. La palabra procede de la telefonía: un *trunk* es una **línea troncal** compartida entre muchos abonados. La traducción española normalizada es **«troncalización»** o «concentración de enlaces»; el CNAF usa la expresión «sistemas multicanales de **acceso aleatorio de frecuencias con concentración de enlaces (*trunking*)**» `[CNAF]`.
+> **[DATO CLAVE]** *Trunking* significa **asignación dinámica de canales bajo demanda desde una bolsa común**, gestionada por un **canal de control** dedicado. La palabra procede de la telefonía: un *trunk* es una **línea troncal** compartida entre muchos abonados. La traducción española normalizada es **«troncalización»** o «concentración de enlaces»; el CNAF usa la expresión «sistemas multicanales de **acceso aleatorio de frecuencias con concentración de enlaces (*trunking*)**» `[CNAF]`.
 
 **Por qué funciona: el efecto de agrupamiento.** La ganancia no es una cuestión de mera comodidad, sino de **teoría de colas**. Un conjunto de recursos compartidos atiende mucha más demanda que la suma de recursos aislados equivalentes, porque los picos de unos coinciden con los valles de otros. Es el mismo principio por el que una cola única ante diez cajeros es más eficiente que diez colas de un cajero cada una. Aplicado a la radio, **ocho canales compartidos entre ocho colectivos dan un grado de servicio muy superior al de un canal dedicado por colectivo**, y permiten atender a **muchos más usuarios** con el mismo espectro.
 
@@ -98,7 +98,7 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 >
 > **Planteamiento troncalizado TETRA**: 4 portadoras × 4 intervalos = **16 canales físicos**; se resta **1** para el canal de control → **15 canales de tráfico simultáneos**, repartidos dinámicamente entre **todos** los colectivos y todos los grupos de conversación que se definan.
 >
-> **Resultado**: con el mismo espectro se pasa de **4 conversaciones simultáneas rígidas** a **15 conversaciones simultáneas flexibles**, casi **cuatro veces más**, y además el número de **grupos** que pueden definirse no está limitado por el número de canales: pueden existir decenas o centenares de grupos de conversación, porque un grupo **solo consume canal mientras alguien habla**. Esa última frase es la clave del modelo y la que más se pregunta.
+> **Resultado**: con el mismo espectro se pasa de **4 conversaciones simultáneas rígidas** a **15 conversaciones simultáneas flexibles**, casi **cuatro veces más**, y además el número de **grupos** que pueden definirse no está limitado por el número de canales: pueden existir decenas o centenares de grupos de conversación, porque un grupo **solo consume canal mientras alguien habla**. Esa última frase es la clave del modelo.
 
 **Las ventajas del *trunking*, ordenadas.** Conviene memorizarlas como lista cerrada:
 
@@ -111,9 +111,9 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 7. **Registro y trazabilidad**: toda transmisión queda asociada a una identidad y puede grabarse y auditarse.
 8. **Integración de voz y datos** sobre la misma infraestructura.
 
-**Y los inconvenientes, que también se preguntan.** El *trunking* introduce **dependencia de la infraestructura**: si cae el canal de control, o cae el nodo de conmutación, el sistema deja de asignar canales. Por eso todos los sistemas troncalizados serios incorporan **modos degradados**: el **repliegue local** (*fallback* o *local site trunking*), en el que una estación base aislada del resto de la red sigue dando servicio troncalizado **dentro de su propia célula**, y el **modo directo** (§2.2.2), en el que los terminales hablan entre sí **sin ninguna infraestructura**. También añade **complejidad y coste**: un sistema troncalizado necesita conmutación, gestión de abonados, canal de control y planificación, frente a la simplicidad de un repetidor convencional.
+**Y los inconvenientes.** El *trunking* introduce **dependencia de la infraestructura**: si cae el canal de control, o cae el nodo de conmutación, el sistema deja de asignar canales. Por eso todos los sistemas troncalizados serios incorporan **modos degradados**: el **repliegue local** (*fallback* o *local site trunking*), en el que una estación base aislada del resto de la red sigue dando servicio troncalizado **dentro de su propia célula**, y el **modo directo** (§2.2.2), en el que los terminales hablan entre sí **sin ninguna infraestructura**. También añade **complejidad y coste**: un sistema troncalizado necesita conmutación, gestión de abonados, canal de control y planificación, frente a la simplicidad de un repetidor convencional.
 
-> **[EJEMPLO AYTO MADRID]** La red municipal es el ejemplo de manual de esta ventaja. Sobre **una única infraestructura**, el Ayuntamiento sirve a colectivos con necesidades muy distintas —**Policía Municipal**, **Bomberos**, **SAMUR-Protección Civil**, **Agentes de Movilidad**, **SAMUR Social** y **Parques y Jardines**— y a **más de 3.000 efectivos** `[TELEFONICA-2026]`. En un esquema convencional habrían hecho falta seis redes separadas, seis conjuntos de frecuencias y ninguna posibilidad de que un bombero y un sanitario hablaran entre sí en una intervención conjunta. Con troncalización, todos comparten los mismos canales físicos y el CISEM puede **crear sobre la marcha un grupo mixto** para una emergencia concreta.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** La red municipal es el ejemplo de manual de esta ventaja. Sobre **una única infraestructura**, el Ayuntamiento sirve a colectivos con necesidades muy distintas —**Policía Municipal**, **Bomberos**, **SAMUR-Protección Civil**, **Agentes de Movilidad**, **SAMUR Social** y **Parques y Jardines**— y a **más de 3.000 efectivos** `[TELEFONICA-2026]`. En un esquema convencional habrían hecho falta seis redes separadas, seis conjuntos de frecuencias y ninguna posibilidad de que un bombero y un sanitario hablaran entre sí en una intervención conjunta. Con troncalización, todos comparten los mismos canales físicos y el CISEM puede **crear sobre la marcha un grupo mixto** para una emergencia concreta.
 
 ### 1.3. Estandarización de TETRA por el ETSI: *Trans European* / *Terrestrial Trunked Radio*
 
@@ -121,16 +121,16 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 
 **Lo que significa que sea «abierto», y por qué importa.** Un estándar abierto del ETSI define **interfaces**, no productos. Cualquier fabricante puede implementar la norma, y los equipos de fabricantes distintos deben entenderse. Esa es la diferencia decisiva frente a **TETRAPOL**, que nació como desarrollo **propietario** de una empresa francesa —hoy integrada en Airbus— y que solo más tarde se documentó públicamente. Para una Administración, la consecuencia es directa y muy citable en un pliego: con un estándar abierto **no queda cautiva de un proveedor**, puede licitar terminales e infraestructura por separado y puede sustituir un fabricante por otro. Para que esa promesa sea real, el ETSI publica además una norma de **pruebas de conformidad**, la **EN 300 394** `[EN394]`, y la industria organiza pruebas de interoperabilidad entre fabricantes.
 
-> **[DATO CLAVE EXAMEN]** **TETRA = estándar abierto del ETSI. TETRAPOL = tecnología de origen propietario (Matra/EADS, hoy Airbus).** Es la diferencia que más se pregunta después de la del acceso al medio (TDMA frente a FDMA). El resto de sistemas: **P25** es norma de la **APCO** estadounidense; **DMR** es también del **ETSI**, pero orientado al segmento profesional de menor exigencia.
+> **[DATO CLAVE]** **TETRA = estándar abierto del ETSI. TETRAPOL = tecnología de origen propietario (Matra/EADS, hoy Airbus).** Es la diferencia principal después de la del acceso al medio (TDMA frente a FDMA). El resto de sistemas: **P25** es norma de la **APCO** estadounidense; **DMR** es también del **ETSI**, pero orientado al segmento profesional de menor exigencia.
 
 **Las dos expansiones de las siglas.** El enunciado oficial del tema recoge las dos, y esa duplicidad tiene una explicación histórica precisa:
 
 - La denominación original fue **Trans European Trunked Radio**, «radio troncal transeuropea», coherente con un proyecto concebido para dar a Europa un sistema **común** de radio profesional, del mismo modo que el GSM le había dado un sistema común de telefonía móvil.
 - Cuando el estándar empezó a adoptarse **fuera de Europa** —hoy, más de 124 países `[TCCA-GLOBAL]`—, el adjetivo «transeuropeo» dejó de tener sentido, y el ETSI pasó a expandir las siglas como **TErrestrial TRunked RAdio**, «radio troncal terrestre». El acrónimo se conservó; cambió lo que significa.
 
-> **[DATO CLAVE EXAMEN]** **La expansión vigente es *TErrestrial Trunked RAdio*.** *Trans European Trunked Radio* es la **histórica**, y se abandonó por la difusión mundial del estándar. El adjetivo «terrestre» tiene además un valor descriptivo: distingue estos sistemas de los **móviles por satélite**. Una pregunta habitual pide la expansión correcta o el motivo del cambio.
+> **[DATO CLAVE]** **La expansión vigente es *TErrestrial Trunked RAdio*.** *Trans European Trunked Radio* es la **histórica**, y se abandonó por la difusión mundial del estándar. El adjetivo «terrestre» tiene además un valor descriptivo: distingue estos sistemas de los **móviles por satélite**.
 
-**La familia de normas, que hay que saber nombrar.** El estándar no es un documento, sino una **serie**. Las piezas que se preguntan son estas:
+**La familia de normas, que hay que saber nombrar.** El estándar no es un documento, sino una **serie**. Las piezas principales son estas:
 
 | Serie | Contenido | Observaciones |
 |---|---|---|
@@ -142,16 +142,16 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 | **TR 102 580** | **TEDS**, el servicio de datos mejorado de **TETRA Release 2** | Guía del diseñador de la alta velocidad de datos |
 | **TS 104 053** | **Especificación de los algoritmos de cifrado** del interfaz aire | Su **parte 1** publicó en **febrero de 2025** el **TEA set A**, hasta entonces confidencial (§4.3.2) |
 
-> **[DATO CLAVE EXAMEN]** Las dos series que hay que distinguir sin dudar: **EN 300 392 = V+D, modo troncalizado**; **EN 300 396 = DMO, modo directo**. Y dentro de la primera, las dos partes más citadas: **la parte 2 (interfaz aire)** y **la parte 7 (seguridad)**.
+> **[DATO CLAVE]** Las dos series que hay que distinguir sin dudar: **EN 300 392 = V+D, modo troncalizado**; **EN 300 396 = DMO, modo directo**. Y dentro de la primera, las dos partes más citadas: **la parte 2 (interfaz aire)** y **la parte 7 (seguridad)**.
 
 **Las dos *releases* del estándar.** TETRA se estructura en dos grandes revisiones funcionales:
 
 - **TETRA Release 1** (la original, de 1995 en adelante) define **V+D**, el **modo directo**, los servicios suplementarios, la seguridad y los datos de baja velocidad. Es lo que está desplegado en la práctica totalidad de las redes en servicio, incluida la del Ayuntamiento de Madrid.
 - **TETRA Release 2** (a partir de 2005-2007) añade tres bloques: **TEDS** (*TETRA Enhanced Data Service*), que multiplica la capacidad de datos con canales más anchos y modulaciones de orden superior; **códecs de voz mejorados** (AMR y códecs de banda ancha); y **mejoras de alcance**, para superar el límite de **58 km** de radio de célula heredado de la estructura de intervalos de la Release 1. Se desarrolla en §5.4.
 
-> **[EJEMPLO AYTO MADRID]** Que TETRA sea un estándar abierto tiene una consecuencia contractual muy concreta en Madrid. La red municipal está construida sobre la plataforma **DIMETRA**, la implementación de TETRA de un fabricante, pero **el mantenimiento y la evolución del sistema se licitan como servicio**: en marzo de 2026, el Ayuntamiento adjudicó a Telefónica Soluciones el **mantenimiento integral y la evolución tecnológica de la infraestructura DIMETRA-TETRA**, por **cinco años**, con **disponibilidad 24×7** y una arquitectura que unifica el despacho y la grabación de las comunicaciones en una plataforma de alta disponibilidad `[TELEFONICA-2026]`. La norma abierta es lo que permite que el titular de la red y el operador del servicio sean entidades distintas, y que el segundo pueda cambiar sin cambiar la primera.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Que TETRA sea un estándar abierto tiene una consecuencia contractual muy concreta en Madrid. La red municipal está construida sobre la plataforma **DIMETRA**, la implementación de TETRA de un fabricante, pero **el mantenimiento y la evolución del sistema se licitan como servicio**: en marzo de 2026, el Ayuntamiento adjudicó a Telefónica Soluciones el **mantenimiento integral y la evolución tecnológica de la infraestructura DIMETRA-TETRA**, por **cinco años**, con **disponibilidad 24×7** y una arquitectura que unifica el despacho y la grabación de las comunicaciones en una plataforma de alta disponibilidad `[TELEFONICA-2026]`. La norma abierta es lo que permite que el titular de la red y el operador del servicio sean entidades distintas, y que el segundo pueda cambiar sin cambiar la primera.
 
-> **[REFERENCIA CRUZADA]** La lógica de la **normalización abierta frente a la solución propietaria** y sus efectos sobre la contratación pública aparece también en el **Tema 39**, a propósito del principio de **neutralidad tecnológica** del Esquema Nacional de Interoperabilidad, y en el **Tema 31**, a propósito de la dependencia de proveedor en servicios en la nube.
+> **[RELACIÓN CON OTROS TEMAS]** La lógica de la **normalización abierta frente a la solución propietaria** y sus efectos sobre la contratación pública aparece también en el **Tema 39**, a propósito del principio de **neutralidad tecnológica** del Esquema Nacional de Interoperabilidad, y en el **Tema 31**, a propósito de la dependencia de proveedor en servicios en la nube.
 ---
 ## 2. Arquitectura y componentes de la red TETRA
 
@@ -163,11 +163,11 @@ Las fuentes se citan con etiquetas breves tipo `[EN392-2]`, `[CNAF]` o `[ENS]`; 
 
 Y los une un **modelo de interfaces** que es la clave de la interoperabilidad y que se explica en §2.3.
 
-> **[DATO CLAVE EXAMEN]** **SwMI** = *Switching and Management Infrastructure*, la infraestructura de conmutación y gestión. Es **el término oficial del estándar** para designar todo lo que no es terminal. **MS** = *Mobile Station*, el terminal. La comunicación entre ambos se produce por el **interfaz aire (I1)**.
+> **[DATO CLAVE]** **SwMI** = *Switching and Management Infrastructure*, la infraestructura de conmutación y gestión. Es **el término oficial del estándar** para designar todo lo que no es terminal. **MS** = *Mobile Station*, el terminal. La comunicación entre ambos se produce por el **interfaz aire (I1)**.
 
 ### 2.1. Infraestructura de conmutación y gestión (SwMI)
 
-La SwMI no es un equipo, sino un **subsistema completo** con funciones de radio, de conmutación, de bases de datos y de gestión. El estándar define su comportamiento **hacia fuera** —cómo se comporta en el interfaz aire, en la ISI y en la interfaz de gestión— pero deja a cada fabricante la libertad de organizarla internamente. De ahí que los nombres comerciales varíen: lo que se pregunta son las **funciones**, no los productos.
+La SwMI no es un equipo, sino un **subsistema completo** con funciones de radio, de conmutación, de bases de datos y de gestión. El estándar define su comportamiento **hacia fuera** —cómo se comporta en el interfaz aire, en la ISI y en la interfaz de gestión— pero deja a cada fabricante la libertad de organizarla internamente. De ahí que los nombres comerciales varíen: lo que importa son las **funciones**, no los productos.
 
 #### 2.1.1. Estaciones base (BS)
 
@@ -183,7 +183,7 @@ La SwMI no es un equipo, sino un **subsistema completo** con funciones de radio,
 - **Gestionar la movilidad dentro de su cobertura** y participar en el **traspaso** (*handover*) hacia células vecinas.
 - **Sostener el modo de repliegue** (*local site trunking*) si pierde la conexión con el resto de la red: sigue dando servicio troncalizado **a los usuarios de su célula**, aunque sin acceso a los grupos ni a los servicios que dependen del núcleo.
 
-> **[DATO CLAVE EXAMEN]** El **canal de control principal (MCCH)** es lo que distingue a un sistema troncalizado. Se transmite en el **intervalo 1 de la portadora principal** de cada célula (la denominada *main carrier*), y es por donde se difunde la información del sistema y se cursan las peticiones de recurso. **Sin canal de control no hay troncalización**; por eso los sistemas prevén el repliegue local y el modo directo.
+> **[DATO CLAVE]** El **canal de control principal (MCCH)** es lo que distingue a un sistema troncalizado. Se transmite en el **intervalo 1 de la portadora principal** de cada célula (la denominada *main carrier*), y es por donde se difunde la información del sistema y se cursan las peticiones de recurso. **Sin canal de control no hay troncalización**; por eso los sistemas prevén el repliegue local y el modo directo.
 
 **Configuraciones típicas.** Una BS puede tener **una sola portadora** (4 canales físicos, de los que uno es el de control → **3 de tráfico**) o **varias**. Cada portadora adicional aporta **4 canales de tráfico** más, porque el canal de control ya está servido. En emplazamientos de mucha carga se instalan cuatro, seis u ocho portadoras.
 
@@ -193,7 +193,7 @@ La SwMI no es un equipo, sino un **subsistema completo** con funciones de radio,
 - **La cobertura en túneles y subterráneos**, que exige soluciones específicas: **cable radiante** (*leaky feeder*), repetidores dedicados o estaciones base internas.
 - **La cobertura de borde y la superposición** entre células, necesaria para que el traspaso sea limpio y para que la caída de una estación base no deje un agujero.
 
-> **[EJEMPLO AYTO MADRID]** El caso del **subsuelo** es especialmente ilustrativo en Madrid, porque hay dos redes distintas que resolver. La red **municipal** debe dar servicio a Policía Municipal, Bomberos y SAMUR en aparcamientos, galerías y estaciones; y la **Comunidad de Madrid** ha ido desplegando **TETRA en la red de Metro**, con actuaciones específicas por tramos —en 2020 se adjudicó la instalación del sistema en el tramo Paco de Lucía-Puerta de Arganda de la **línea 9**, con **5,2 millones de euros** de inversión, para comunicar el Puesto de Mando con el personal de estaciones y los conductores `[METRO]`—. Que sean dos redes distintas plantea justo el problema que resuelve la **ISI** (§2.3.2): cómo hablan entre sí.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El caso del **subsuelo** es especialmente ilustrativo en Madrid, porque hay dos redes distintas que resolver. La red **municipal** debe dar servicio a Policía Municipal, Bomberos y SAMUR en aparcamientos, galerías y estaciones; y la **Comunidad de Madrid** ha ido desplegando **TETRA en la red de Metro**, con actuaciones específicas por tramos —en 2020 se adjudicó la instalación del sistema en el tramo Paco de Lucía-Puerta de Arganda de la **línea 9**, con **5,2 millones de euros** de inversión, para comunicar el Puesto de Mando con el personal de estaciones y los conductores `[METRO]`—. Que sean dos redes distintas plantea justo el problema que resuelve la **ISI** (§2.3.2): cómo hablan entre sí.
 
 #### 2.1.2. Nodos de conmutación y control de red
 
@@ -209,11 +209,11 @@ La SwMI no es un equipo, sino un **subsistema completo** con funciones de radio,
 - **Pasarelas** hacia la red telefónica pública, hacia la centralita corporativa y hacia redes de datos.
 - **Interconexión con otras redes TETRA** por la **ISI**.
 
-> **[DATO CLAVE EXAMEN]** En una llamada de grupo, **la red solo ocupa canal de tráfico en las células donde hay miembros del grupo afiliados**. Es la razón por la que un sistema TETRA puede soportar cientos de grupos con pocas portadoras, y una de las diferencias esenciales frente a la radio convencional, donde el grupo **es** una frecuencia y ocupa el canal siempre.
+> **[DATO CLAVE]** En una llamada de grupo, **la red solo ocupa canal de tráfico en las células donde hay miembros del grupo afiliados**. Es la razón por la que un sistema TETRA puede soportar cientos de grupos con pocas portadoras, y una de las diferencias esenciales frente a la radio convencional, donde el grupo **es** una frecuencia y ocupa el canal siempre.
 
 **Arquitectura distribuida y redundancia.** En redes grandes hay **varios nodos de conmutación** interconectados, de forma que la caída de uno no deja sin servicio a toda la red. La topología del transporte entre nodos y estaciones base —fibra propia, radioenlaces, líneas alquiladas— es una decisión de diseño crítica: **un sistema de radio crítico es tan disponible como su red de transporte**. En §5.3 se desarrollan los requisitos de disponibilidad.
 
-> **[REFERENCIA CRUZADA]** El diseño de la red de transporte que une las estaciones base con los nodos —radioenlaces, fibra, topologías en anillo— pertenece al **Tema 33**; los mecanismos de redundancia y continuidad, al **Tema 26** (copias de seguridad y recuperación) y al **Tema 39** (medidas `op.cont` del ENS).
+> **[RELACIÓN CON OTROS TEMAS]** El diseño de la red de transporte que une las estaciones base con los nodos —radioenlaces, fibra, topologías en anillo— pertenece al **Tema 33**; los mecanismos de redundancia y continuidad, al **Tema 26** (copias de seguridad y recuperación) y al **Tema 39** (medidas `op.cont` del ENS).
 
 #### 2.1.3. Centros de gestión y administración del sistema
 
@@ -229,9 +229,9 @@ Este tercer bloque es el que más se olvida al estudiar y el que más aparece en
 
 **La gestión de claves criptográficas.** Generación, custodia, distribución y renovación de las claves de cifrado, incluida la **distribución por el aire (OTAR)**. Es una función de seguridad de primer orden que el ENS recoge expresamente en la medida **`op.exp.10`, «protección de claves criptográficas»** `[ENS]`.
 
-> **[EJEMPLO AYTO MADRID]** El **CISEM** —Centro Integrado de Seguridad y Emergencias, en la calle Rufino Blanco 2— es exactamente este tercer bloque hecho edificio. Desde él se coordinan **Policía Municipal (092), Bomberos, SAMUR-Protección Civil y Agentes de Movilidad**, con del orden de **3.000 incidentes diarios** `[CISEM]`. Y en el contrato de 2026 aparece explícitamente la evolución de esta capa: una arquitectura que **unifica el despacho y la grabación de comunicaciones en una plataforma de alta disponibilidad** `[TELEFONICA-2026]`. Obsérvese que lo que se moderniza no es la radio, sino **la capa de gestión y despacho**: es donde está el valor operativo del sistema.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El **CISEM** —Centro Integrado de Seguridad y Emergencias, en la calle Rufino Blanco 2— es exactamente este tercer bloque hecho edificio. Desde él se coordinan **Policía Municipal (092), Bomberos, SAMUR-Protección Civil y Agentes de Movilidad**, con del orden de **3.000 incidentes diarios** `[CISEM]`. Y en el contrato de 2026 aparece explícitamente la evolución de esta capa: una arquitectura que **unifica el despacho y la grabación de comunicaciones en una plataforma de alta disponibilidad** `[TELEFONICA-2026]`. Obsérvese que lo que se moderniza no es la radio, sino **la capa de gestión y despacho**: es donde está el valor operativo del sistema.
 
-> **[REFERENCIA CRUZADA]** La **grabación de las comunicaciones** y la **geolocalización de los terminales** son tratamientos de **datos personales** de empleados públicos: exigen base jurídica, información previa, plazos de conservación y medidas de seguridad. El marco está en el **Tema 6** (transparencia y acceso) y en el **Tema 32** (seguridad de la información); la protección de datos como tal no tiene tema propio en el temario oficial.
+> **[RELACIÓN CON OTROS TEMAS]** La **grabación de las comunicaciones** y la **geolocalización de los terminales** son tratamientos de **datos personales** de empleados públicos: exigen base jurídica, información previa, plazos de conservación y medidas de seguridad. El marco está en el **Tema 6** (transparencia y acceso) y en el **Tema 32** (seguridad de la información); la protección de datos como tal no tiene tema propio en el temario oficial.
 
 ### 2.2. Terminales de usuario
 
@@ -245,7 +245,7 @@ Este tercer bloque es el que más se olvida al estudiar y el que más aparece en
 | **Móvil** (*mobile*, embarcado) | Instalado en un vehículo, alimentado del sistema eléctrico y con antena exterior | **3 W** o **10 W** | Patrullas, ambulancias, autobombas |
 | **Fijo** (*fixed station*, *desktop*) | De sobremesa, en una dependencia, con antena exterior y alimentación de red | **10 W** o más | Oficinas, retenes, puestos de mando avanzados |
 
-> **[DATO CLAVE EXAMEN]** Las **clases de potencia** normalizadas para el terminal TETRA son **clase 1 = 30 W**, **clase 2 = 10 W**, **clase 3 = 3 W** y **clase 4 = 1 W** (existen clases adicionales de menor potencia). En la práctica, **portátiles de 1 y 3 W** y **móviles de 3 y 10 W**. La diferencia de potencia entre un portátil y un móvil explica por qué, en el borde de la cobertura, **el vehículo llega y el agente a pie no**: es el argumento técnico que justifica el uso de **pasarelas** (§2.2.3).
+> **[DATO CLAVE]** Las **clases de potencia** normalizadas para el terminal TETRA son **clase 1 = 30 W**, **clase 2 = 10 W**, **clase 3 = 3 W** y **clase 4 = 1 W** (existen clases adicionales de menor potencia). En la práctica, **portátiles de 1 y 3 W** y **móviles de 3 y 10 W**. La diferencia de potencia entre un portátil y un móvil explica por qué, en el borde de la cobertura, **el vehículo llega y el agente a pie no**: es el argumento técnico que justifica el uso de **pasarelas** (§2.2.3).
 
 **Elementos comunes a todos ellos:**
 
@@ -258,7 +258,7 @@ Este tercer bloque es el que más se olvida al estudiar y el que más aparece en
 - **Robustez ambiental** certificada (grados **IP** de estanqueidad, resistencia a caídas, rango de temperatura) y, en usos con riesgo de atmósfera explosiva, **certificación ATEX**.
 - **Interfaz de datos (PEI)** para conectar un ordenador embarcado o una aplicación (§2.3.3).
 
-**Las identidades del terminal, que se preguntan.** TETRA maneja un esquema de identidades propio:
+**Las identidades del terminal.** TETRA maneja un esquema de identidades propio:
 
 - La **ITSI** (*Individual TETRA Subscriber Identity*) es la identidad individual completa del abonado. Se compone de la **MNI** (*Mobile Network Identity*, la identidad de la red, formada a su vez por el **MCC** —código de país— y el **MNC** —código de red—) más la **ISSI** (*Individual Short Subscriber Identity*), que es la parte corta que identifica al abonado **dentro** de su red.
 - La **GTSI** (*Group TETRA Subscriber Identity*) es la identidad de **grupo**, y su parte corta es la **GSSI** (*Group Short Subscriber Identity*).
@@ -266,11 +266,11 @@ Este tercer bloque es el que más se olvida al estudiar y el que más aparece en
 - Sobre ellas puede aplicarse el **cifrado de identidades**: la **ESI** (*Encrypted Short Identity*), que sustituye la identidad corta por una versión cifrada en el aire para evitar el seguimiento de los usuarios (§4.3.2).
 - Y, además de la identidad numérica, un **alias** alfanumérico legible («PM-Centro-12», «SAMUR-Jefe de Guardia») que es lo que se ve en la pantalla.
 
-> **[DATO CLAVE EXAMEN]** **ITSI = MNI + ISSI**, donde **MNI = MCC + MNC**. La identidad **individual** corta es la **ISSI**; la de **grupo**, la **GSSI**. La **ESI** es la identidad corta **cifrada**, y es justamente el mecanismo cuyo diseño débil denunció la investigación **TETRA:BURST** en 2023 (§4.3.2).
+> **[DATO CLAVE]** **ITSI = MNI + ISSI**, donde **MNI = MCC + MNC**. La identidad **individual** corta es la **ISSI**; la de **grupo**, la **GSSI**. La **ESI** es la identidad corta **cifrada**, y es justamente el mecanismo cuyo diseño débil denunció la investigación **TETRA:BURST** en 2023 (§4.3.2).
 
 #### 2.2.2. Modos de operación: modo troncalizado (TMO) y modo directo (DMO)
 
-Este es **el epígrafe más preguntado de toda la sección** y conviene fijarlo con precisión.
+Este es **el epígrafe central de toda la sección** y conviene fijarlo con precisión.
 
 **Modo troncalizado — TMO (*Trunked Mode Operation*).** Es el modo normal: el terminal **se comunica a través de la infraestructura**. Habla con una estación base, la estación base lo conecta con el nodo de conmutación y éste distribuye la comunicación a quien corresponda. Está normalizado en la serie **EN 300 392** (V+D).
 
@@ -282,9 +282,9 @@ Este es **el epígrafe más preguntado de toda la sección** y conviene fijarlo 
 - **Ventajas**: funciona **allí donde no llega la red** —el interior de un edificio, un sótano, un túnel, una zona rural, una emergencia que ha dejado la infraestructura fuera de servicio— y **no consume recursos** de la red.
 - **Limitaciones**: el alcance es el que da la potencia del terminal (**centenares de metros en ciudad, unos pocos kilómetros en campo abierto**); **no hay despacho ni grabación centralizada**; **no hay prioridades gestionadas** por la red; el grupo de conversación es el que se haya programado en los equipos; y la seguridad depende de **claves estáticas precargadas**, no de la autenticación con la red.
 
-> **[DATO CLAVE EXAMEN]** **TMO = a través de la infraestructura (EN 300 392). DMO = terminal a terminal, sin infraestructura (EN 300 396).** El modo directo es una de las diferencias funcionales de fondo entre la PMR y la telefonía celular: un teléfono móvil **no puede** hablar con otro si cae la red; un terminal TETRA **sí**. Es exactamente por esto por lo que un servicio de emergencia no puede sustituir su red de radio por teléfonos móviles.
+> **[DATO CLAVE]** **TMO = a través de la infraestructura (EN 300 392). DMO = terminal a terminal, sin infraestructura (EN 300 396).** El modo directo es una de las diferencias funcionales de fondo entre la PMR y la telefonía celular: un teléfono móvil **no puede** hablar con otro si cae la red; un terminal TETRA **sí**. Es exactamente por esto por lo que un servicio de emergencia no puede sustituir su red de radio por teléfonos móviles.
 
-**El uso operativo real, que es lo que se pregunta en los casos prácticos.** Un servicio de emergencia usa **los dos modos a la vez**, y no de forma alternativa:
+**El uso operativo real.** Un servicio de emergencia usa **los dos modos a la vez**, y no de forma alternativa:
 
 - El **mando y la coordinación general** van por **TMO**: es donde está el despacho, la grabación y el resto de la organización.
 - La **coordinación dentro de la intervención** —la dotación que entra en un edificio en llamas, el equipo que baja a una galería— va por **DMO**, porque allí no hay cobertura y porque, aunque la hubiera, no tiene sentido ocupar canales de la red para hablar entre personas que están a veinte metros unas de otras.
@@ -307,7 +307,7 @@ La norma distingue tipos `[EN396]`:
 
 **Y el equipo que hace las dos cosas — DM-REP/GATE**, que combina la función de repetidor y la de pasarela.
 
-> **[DATO CLAVE EXAMEN]** **DM-REP = repetidor: amplía el alcance dentro del modo directo, sin tocar la red.** **DM-GATE = pasarela: conecta el modo directo con la red troncalizada.** **DM-REP/GATE** hace ambas. Los tipos de repetidor son **1A** (una portadora, una llamada), **1B** (par de portadoras dúplex, una llamada) y **2** (dos llamadas). Confundir repetidor con pasarela es el error clásico de este epígrafe.
+> **[DATO CLAVE]** **DM-REP = repetidor: amplía el alcance dentro del modo directo, sin tocar la red.** **DM-GATE = pasarela: conecta el modo directo con la red troncalizada.** **DM-REP/GATE** hace ambas. Los tipos de repetidor son **1A** (una portadora, una llamada), **1B** (par de portadoras dúplex, una llamada) y **2** (dos llamadas). Confundir repetidor con pasarela es el error clásico de este epígrafe.
 
 **Dónde se materializan estas funciones.** Normalmente **en el terminal móvil de un vehículo**: los equipos embarcados de gama profesional pueden configurarse para actuar como DM-REP o DM-GATE. Eso convierte al vehículo aparcado en la puerta de un edificio en **el nodo que da cobertura y conectividad a los que están dentro** —y explica por qué, en la práctica operativa, la ubicación del vehículo de mando no es una decisión menor—. También existen repetidores y pasarelas **transportables**, que se despliegan sobre el terreno en incidentes de larga duración.
 
@@ -338,7 +338,7 @@ La norma distingue tipos `[EN396]`:
 | **I5** | **Interfaz de gestión de red** | SwMI ↔ sistema de gestión (NMS) | EN 300 392 |
 | **I6** | **Interfaz aire de modo directo** | Terminal ↔ terminal, **sin red** | **EN 300 396** |
 
-> **[DATO CLAVE EXAMEN]** Las seis interfaces, en orden: **I1 aire (TMO)**, **I2 línea**, **I3 ISI**, **I4 terminal/PEI**, **I5 gestión de red**, **I6 aire en modo directo**. Las **dos interfaces aire** son la **I1** (troncalizado) y la **I6** (directo), y están en normas distintas. A esto se añaden las **pasarelas a PSTN y RDSI** de la **EN 300 392-4**, que no son un punto I sino un elemento funcional.
+> **[DATO CLAVE]** Las seis interfaces, en orden: **I1 aire (TMO)**, **I2 línea**, **I3 ISI**, **I4 terminal/PEI**, **I5 gestión de red**, **I6 aire en modo directo**. Las **dos interfaces aire** son la **I1** (troncalizado) y la **I6** (directo), y están en normas distintas. A esto se añaden las **pasarelas a PSTN y RDSI** de la **EN 300 392-4**, que no son un punto I sino un elemento funcional.
 
 #### 2.3.1. Interfaz aire (*air interface*)
 
@@ -348,9 +348,9 @@ La norma distingue tipos `[EN396]`:
 2. **Capa de enlace de datos (capa 2)**: subdividida en **MAC** (*Medium Access Control*), que gestiona el acceso al medio y multiplexa los canales lógicos sobre los físicos, y **LLC** (*Logical Link Control*), que da el servicio de enlace fiable o no fiable a la capa superior. Aquí residen el **acceso aleatorio con resolución de colisiones** y el **cifrado de interfaz aire**.
 3. **Capa de red (capa 3)**: donde viven los protocolos de **gestión de la movilidad** (**MM**), de **control de llamada** (**CMCE**, *Circuit Mode Control Entity*, para voz y datos por circuito), de **datos por paquetes** (**SNDCP**) y de **gestión del propio interfaz** (**MLE**).
 
-> **[DATO CLAVE EXAMEN]** El interfaz aire de TETRA se estructura en **tres capas**: **física**, **enlace (MAC + LLC)** y **red (MM, CMCE, SNDCP, MLE)**. El **cifrado de interfaz aire se aplica en la capa 2**, entre terminal y estación base; el **cifrado extremo a extremo**, por encima, entre terminal y terminal (§4.3.3). Esa diferencia de nivel es la que explica **qué protege cada uno**.
+> **[DATO CLAVE]** El interfaz aire de TETRA se estructura en **tres capas**: **física**, **enlace (MAC + LLC)** y **red (MM, CMCE, SNDCP, MLE)**. El **cifrado de interfaz aire se aplica en la capa 2**, entre terminal y estación base; el **cifrado extremo a extremo**, por encima, entre terminal y terminal (§4.3.3). Esa diferencia de nivel es la que explica **qué protege cada uno**.
 
-> **[REFERENCIA CRUZADA]** La correspondencia entre estas tres capas y las siete del **modelo OSI** —y las cuatro de **TCP/IP**— es materia del **Tema 34**. Aquí basta con retener que TETRA implementa las tres capas inferiores y que, por encima de ellas, transporta **IP** cuando presta servicio de datos por paquetes (§4.2.2).
+> **[RELACIÓN CON OTROS TEMAS]** La correspondencia entre estas tres capas y las siete del **modelo OSI** —y las cuatro de **TCP/IP**— es materia del **Tema 34**. Aquí basta con retener que TETRA implementa las tres capas inferiores y que, por encima de ellas, transporta **IP** cuando presta servicio de datos por paquetes (§4.2.2).
 
 #### 2.3.2. Interfaz de interconexión entre sistemas (ISI)
 
@@ -365,7 +365,7 @@ La norma distingue tipos `[EN396]`:
 
 **El problema práctico, que conviene decir con franqueza.** La ISI es la parte del estándar cuya **implantación real ha sido más desigual**. Durante años, los fabricantes la implementaron de forma parcial o con extensiones propias, de modo que muchas interconexiones entre redes se resolvieron con **pasarelas de audio** o **acoplamientos a nivel de despacho** —consolas que puentean grupos de dos redes— en lugar de con una ISI completa. Es un punto sensible en cualquier pliego: **conviene exigir la interconexión con requisitos funcionales verificables**, no con una simple mención a la norma.
 
-> **[EJEMPLO AYTO MADRID]** En el territorio del municipio conviven, como mínimo, **tres sistemas de radiocomunicación de emergencia de titularidad distinta**: el **municipal** (DIMETRA-TETRA del Ayuntamiento), el **autonómico** (la red TETRA de la Comunidad de Madrid, con **113 estaciones base** y **5.316 terminales**, gestionada por la **ASEM 112** `[CM-TETRA]`) y el **estatal** (**SIRDEE**, que además **no es TETRA sino TETRAPOL** `[SIRDEE]`). Los dos primeros son interconectables por **ISI**, al menos en teoría; con el tercero **la ISI no sirve**, porque es otra tecnología, y la interoperabilidad tiene que resolverse forzosamente por **pasarelas** o por **acoplamiento de grupos en los centros de mando**. Es la razón técnica por la que la coordinación multiadministración en una emergencia grande sigue apoyándose en los centros 112 y no en la radio.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** En el territorio del municipio conviven, como mínimo, **tres sistemas de radiocomunicación de emergencia de titularidad distinta**: el **municipal** (DIMETRA-TETRA del Ayuntamiento), el **autonómico** (la red TETRA de la Comunidad de Madrid, con **113 estaciones base** y **5.316 terminales**, gestionada por la **ASEM 112** `[CM-TETRA]`) y el **estatal** (**SIRDEE**, que además **no es TETRA sino TETRAPOL** `[SIRDEE]`). Los dos primeros son interconectables por **ISI**, al menos en teoría; con el tercero **la ISI no sirve**, porque es otra tecnología, y la interoperabilidad tiene que resolverse forzosamente por **pasarelas** o por **acoplamiento de grupos en los centros de mando**. Es la razón técnica por la que la coordinación multiadministración en una emergencia grande sigue apoyándose en los centros 112 y no en la radio.
 
 #### 2.3.3. Interfaz de línea (LNI) e interfaces de datos
 
@@ -375,9 +375,9 @@ La norma distingue tipos `[EN396]`:
 
 **Y las pasarelas hacia otras redes.** La **EN 300 392-4** `[EN392-4]` define las pasarelas hacia la **red telefónica pública conmutada (PSTN)** y hacia **RDSI**, que permiten que un terminal de radio llame a un teléfono fijo o móvil, y al revés, con las restricciones de tarificación y autorización que fije el operador de la red.
 
-> **[EJEMPLO AYTO MADRID]** El **PEI** es lo que hace posible una función cotidiana en la Policía Municipal: que el terminal embarcado transmita, sin intervención del agente, la **posición del vehículo** al sistema de gestión de flotas del CISEM, y que el ordenador del coche patrulla curse consultas a sistemas de información —matrículas, requisitorias— **usando la radio como canal de datos** cuando no hay cobertura de datos comercial o cuando se exige que el tráfico vaya por la red propia. La capacidad es modesta en TETRA Release 1 (§4.2.2), lo bastante para texto y consultas breves, y es justo el límite que **TEDS** (§5.4) vino a ampliar.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El **PEI** es lo que hace posible una función cotidiana en la Policía Municipal: que el terminal embarcado transmita, sin intervención del agente, la **posición del vehículo** al sistema de gestión de flotas del CISEM, y que el ordenador del coche patrulla curse consultas a sistemas de información —matrículas, requisitorias— **usando la radio como canal de datos** cuando no hay cobertura de datos comercial o cuando se exige que el tráfico vaya por la red propia. La capacidad es modesta en TETRA Release 1 (§4.2.2), lo bastante para texto y consultas breves, y es justo el límite que **TEDS** (§5.4) vino a ampliar.
 
-> **[REFERENCIA CRUZADA]** El uso del terminal como canal de datos para aplicaciones de gestión enlaza con el **Tema 24** (desarrollo para dispositivos móviles) y con el **Tema 22** (arquitecturas cliente/servidor y servicios web); la protección del tráfico de esas aplicaciones, con el **Tema 36**.
+> **[RELACIÓN CON OTROS TEMAS]** El uso del terminal como canal de datos para aplicaciones de gestión enlaza con el **Tema 24** (desarrollo para dispositivos móviles) y con el **Tema 22** (arquitecturas cliente/servidor y servicios web); la protección del tráfico de esas aplicaciones, con el **Tema 36**.
 ---
 ## 3. Capa física y transmisión radio en TETRA
 
@@ -396,9 +396,9 @@ La norma distingue tipos `[EN396]`:
 | **450-470 MHz** | Uso civil y PPDR según país |
 | **806-870 MHz** | Uso comercial y de transporte, principalmente fuera de Europa |
 
-**Y ahora la parte española, que es la que se pregunta.** El **Cuadro Nacional de Atribución de Frecuencias** es la norma que reparte el espectro en España. Y aquí hay que empezar por un dato que casi ningún material recoge todavía:
+**Y ahora la parte española.** El **Cuadro Nacional de Atribución de Frecuencias** es la norma que reparte el espectro en España. Y aquí hay que empezar por un dato que casi ningún material recoge todavía:
 
-> **[DATO CLAVE EXAMEN]** **El CNAF vigente es el aprobado por la Orden TDF/732/2026, de 10 de julio** (BOE núm. 173, de **17 de julio de 2026**, 349 páginas). **Sustituye al anterior —Orden ETD/1449/2021, de 16 de diciembre— con efectos de 18 de julio de 2026**, y su motivo declarado es incorporar las previsiones de la **Conferencia Mundial de Radiocomunicaciones de 2023 (CMR-23)**, en vigor en su mayoría desde el **1 de enero de 2025**. Quien haya estudiado con material anterior al verano de 2026 citará una orden **derogada**.
+> **[DATO CLAVE]** **El CNAF vigente es el aprobado por la Orden TDF/732/2026, de 10 de julio** (BOE núm. 173, de **17 de julio de 2026**, 349 páginas). **Sustituye al anterior —Orden ETD/1449/2021, de 16 de diciembre— con efectos de 18 de julio de 2026**, y su motivo declarado es incorporar las previsiones de la **Conferencia Mundial de Radiocomunicaciones de 2023 (CMR-23)**, en vigor en su mayoría desde el **1 de enero de 2025**. Quien haya estudiado con material anterior al verano de 2026 citará una orden **derogada**.
 
 **Las dos notas del CNAF que hay que conocer.** Las condiciones concretas de uso de cada banda están en las **notas de utilización nacional (UN)**. Dos de ellas son directamente materia de este tema.
 
@@ -406,7 +406,7 @@ La norma distingue tipos `[EN396]`:
 
 **Nota UN-31 — la banda de TETRA civil, donde el CNAF nombra la tecnología.** Estructura la banda **406-470 MHz** en subbandas. La que interesa es la **410-430 MHz**, «reservada a aplicaciones del servicio móvil y fijo de banda estrecha bajo la modalidad **dúplex con una separación Tx/Rx de 10 MHz**». Y dentro de ella, textualmente: «Las subbandas de frecuencias **410 a 415,3 MHz y 420 a 425,3 MHz** […] se destinan a **sistemas digitales de acceso aleatorio de canales (TETRA y otros)** con anchura de banda de emisión correspondiente a una **canalización de 25 kHz**» `[CNAF]`. El resto de la banda 410-430 MHz se destina a comunicaciones dúplex con canalización de **12,5 kHz**.
 
-> **[DATO CLAVE EXAMEN]** Las dos cifras que hay que saber de memoria: **380-385 / 390-395 MHz** para las redes de **seguridad del Estado y emergencias** (nota **UN-28**, decisión **ECC/DEC(08)05**); y **410-415,3 / 420-425,3 MHz** para **TETRA civil**, con **canalización de 25 kHz** y **separación dúplex de 10 MHz** (nota **UN-31**). El CNAF **cita TETRA por su nombre** en esta segunda nota: es la única mención expresa de la tecnología en la norma española del espectro, y por eso es un dato de examen de primer orden.
+> **[DATO CLAVE]** Las dos cifras que hay que saber de memoria: **380-385 / 390-395 MHz** para las redes de **seguridad del Estado y emergencias** (nota **UN-28**, decisión **ECC/DEC(08)05**); y **410-415,3 / 420-425,3 MHz** para **TETRA civil**, con **canalización de 25 kHz** y **separación dúplex de 10 MHz** (nota **UN-31**). El CNAF **cita TETRA por su nombre** en esta segunda nota: es la única mención expresa de la tecnología en la norma española del espectro, y por eso es un dato de primer orden.
 
 **Un tercer dato del CNAF, para la evolución.** La misma nota **UN-31** reserva los bloques pareados **452-457,5 / 462-467,5 MHz**, en aplicación de la Decisión **ECC/DEC(16)02**, «a sistemas de **protección pública y operaciones de socorro en caso de catástrofe PPDR** de **banda ancha**, preferentemente para el sistema de ámbito nacional» `[CNAF]`. Y en la banda de **700 MHz**, el CNAF destina **733-736 / 788-791 MHz** al sistema PPDR de **ámbito nacional** y **698-703 / 753-758 MHz** a las **redes de ámbito autonómico y local** `[CNAF]`. Ese último bloque es, literalmente, **el espectro que la norma española reserva para una futura red de banda ancha crítica de una comunidad autónoma o de un ayuntamiento** (§5.4).
 
@@ -422,7 +422,7 @@ La norma distingue tipos `[EN396]`:
 >
 > **Paso 4 — ¿Qué título habilitante?** Uso **privativo** para **autoprestación** por una Administración pública → **afectación demanial**, art. **88.5.b)** de la Ley 11/2022 (§5.2).
 >
-> **Conclusión**: la respuesta no es «la banda de emergencias porque somos un ayuntamiento», sino «la banda que corresponda **al servicio**, según lo que diga la nota UN». Es el error más frecuente en este tipo de pregunta.
+> **Conclusión**: la respuesta no es «la banda de emergencias porque somos un ayuntamiento», sino «la banda que corresponda **al servicio**, según lo que diga la nota UN». Es el error más frecuente en este tipo de supuesto.
 
 **Reutilización de frecuencias y planificación celular.** Como en cualquier sistema celular, las mismas portadoras se reutilizan en células suficientemente alejadas. El **patrón de reutilización** debe garantizar una relación señal-interferencia suficiente; en TETRA se manejan patrones más conservadores que en telefonía celular porque el requisito de **calidad de voz en el borde de la célula** es más exigente. La contrapartida es que la red necesita **menos capacidad por célula** que una red comercial: el tráfico de un servicio de emergencia es de baja ocupación media y picos muy acusados.
 
@@ -436,9 +436,9 @@ La norma distingue tipos `[EN396]`:
 
 **Lo que hace TETRA es una combinación.** El espectro se divide primero en **portadoras de 25 kHz** —eso es **FDMA**— y cada portadora se divide después en **4 intervalos de tiempo** —eso es **TDMA**—. El resultado es que **una sola pareja de frecuencias de 25 kHz sostiene cuatro canales físicos**.
 
-> **[DATO CLAVE EXAMEN]** **TETRA usa FDMA + TDMA 4:1**: portadoras de **25 kHz** con **4 intervalos** cada una. Ésta es **la** cifra del tema. De ella se derivan las demás: 4 canales por portadora, uno de ellos normalmente de control, y **tres de tráfico** en una estación base de una sola portadora.
+> **[DATO CLAVE]** **TETRA usa FDMA + TDMA 4:1**: portadoras de **25 kHz** con **4 intervalos** cada una. Ésta es **la** cifra del tema. De ella se derivan las demás: 4 canales por portadora, uno de ellos normalmente de control, y **tres de tráfico** en una estación base de una sola portadora.
 
-**Por qué esto importa tanto en la comparación con TETRAPOL.** Es la diferencia estructural entre los dos sistemas y la pregunta comparativa más probable:
+**Por qué esto importa tanto en la comparación con TETRAPOL.** Es la diferencia estructural entre los dos sistemas y el eje de la comparación:
 
 | | **TETRA** | **TETRAPOL** |
 |---|---|---|
@@ -450,7 +450,7 @@ La norma distingue tipos `[EN396]`:
 | Eficiencia por canal de voz | 25 kHz / 4 = **6,25 kHz por canal** | **12,5 kHz por canal** |
 | Uso en España | Redes **autonómicas y municipales** (Madrid, entre otras) | **SIRDEE**, la red del **Estado** |
 
-> **[DATO CLAVE EXAMEN]** **TETRA = TDMA, 25 kHz, 4 canales por portadora, π/4-DQPSK. TETRAPOL = FDMA, 12,5 kHz, 1 canal por portadora, GMSK.** En **eficiencia espectral por canal de voz**, TETRA obtiene **6,25 kHz/canal** frente a los **12,5 kHz/canal** de TETRAPOL: **el doble**. A cambio, el esquema FDMA de TETRAPOL da algo más de alcance por canal en condiciones de propagación difíciles, que es el argumento clásico de sus defensores para el despliegue rural. Y, sobre todo: **el SIRDEE español es TETRAPOL, no TETRA**.
+> **[DATO CLAVE]** **TETRA = TDMA, 25 kHz, 4 canales por portadora, π/4-DQPSK. TETRAPOL = FDMA, 12,5 kHz, 1 canal por portadora, GMSK.** En **eficiencia espectral por canal de voz**, TETRA obtiene **6,25 kHz/canal** frente a los **12,5 kHz/canal** de TETRAPOL: **el doble**. A cambio, el esquema FDMA de TETRAPOL da algo más de alcance por canal en condiciones de propagación difíciles, que es el argumento clásico de sus defensores para el despliegue rural. Y, sobre todo: **el SIRDEE español es TETRAPOL, no TETRA**.
 
 **Las consecuencias prácticas del TDMA.** El esquema de intervalos no es solo una forma de repartir: habilita funciones que el FDMA no tiene fáciles.
 
@@ -461,7 +461,7 @@ La norma distingue tipos `[EN396]`:
 
 **Y su limitación característica: el alcance.** La estructura de intervalos impone un **tiempo de guarda** finito entre transmisiones consecutivas. Si un terminal está muy lejos, su ráfaga llega tan retrasada que **invadiría el intervalo siguiente**. Ese razonamiento fija el **radio máximo de célula de TETRA Release 1 en 58 km**. No es una limitación de potencia, sino **de tiempo**: es el mismo fenómeno que limitaba el alcance de las células GSM.
 
-> **[DATO CLAVE EXAMEN]** El **radio máximo de célula en TETRA Release 1 es de 58 km**, y la causa es **la estructura temporal de los intervalos TDMA**, no la potencia. TETRA Release 2 incorporó mejoras de alcance para superar ese límite en despliegues rurales, marítimos y militares.
+> **[DATO CLAVE]** El **radio máximo de célula en TETRA Release 1 es de 58 km**, y la causa es **la estructura temporal de los intervalos TDMA**, no la potencia. TETRA Release 2 incorporó mejoras de alcance para superar ese límite en despliegues rurales, marítimos y militares.
 
 ### 3.3. Modulación digital π/4-DQPSK
 
@@ -474,7 +474,7 @@ La norma distingue tipos `[EN396]`:
 
 **Por qué ese detalle del origen es importante.** Pasar por el origen significa que la **envolvente de la señal cae a cero**, y una señal con variaciones muy bruscas de amplitud obliga a usar amplificadores muy lineales, que son **caros e ineficientes en consumo**. Al evitar el paso por cero, la π/4-DQPSK mantiene una **relación pico-media moderada**, lo que permite amplificadores más eficientes: en un terminal alimentado por batería, eso se traduce directamente en **más horas de autonomía**.
 
-> **[DATO CLAVE EXAMEN]** **π/4-DQPSK**: **4 estados de fase → 2 bits por símbolo**; **codificación diferencial** (se codifica el **cambio** de fase, no la fase absoluta); y **desplazamiento de π/4** que evita el paso por el origen y, con él, las caídas de envolvente a cero. Comparar con la **GMSK** de TETRAPOL y de GSM, que es de **envolvente constante** y **1 bit por símbolo**.
+> **[DATO CLAVE]** **π/4-DQPSK**: **4 estados de fase → 2 bits por símbolo**; **codificación diferencial** (se codifica el **cambio** de fase, no la fase absoluta); y **desplazamiento de π/4** que evita el paso por el origen y, con él, las caídas de envolvente a cero. Comparar con la **GMSK** de TETRAPOL y de GSM, que es de **envolvente constante** y **1 bit por símbolo**.
 
 **Las cifras que se derivan.** La tasa de símbolo del interfaz aire es de **18.000 símbolos por segundo (18 kbaudios)** en un canal de **25 kHz**, con filtrado de **coseno alzado en raíz** de factor de caída (*roll-off*) **α = 0,35**. Como cada símbolo lleva **2 bits**:
 
@@ -482,7 +482,7 @@ La norma distingue tipos `[EN396]`:
 
 Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **9 kbit/s brutos**, de los que —descontadas la sincronización, las cabeceras y la protección de errores— quedan **7,2 kbit/s netos** disponibles por intervalo para el usuario.
 
-> **[DATO CLAVE EXAMEN]** La cadena de cifras que hay que saber encadenar: **25 kHz → 18 kbaudios → 2 bits/símbolo → 36 kbit/s brutos por portadora → 4 intervalos → 7,2 kbit/s netos por intervalo**. Con los **cuatro intervalos** agregados: **28,8 kbit/s** netos. Es la cifra que define el techo de datos de TETRA Release 1 y la razón de ser de **TEDS**.
+> **[DATO CLAVE]** La cadena de cifras que hay que saber encadenar: **25 kHz → 18 kbaudios → 2 bits/símbolo → 36 kbit/s brutos por portadora → 4 intervalos → 7,2 kbit/s netos por intervalo**. Con los **cuatro intervalos** agregados: **28,8 kbit/s** netos. Es la cifra que define el techo de datos de TETRA Release 1 y la razón de ser de **TEDS**.
 
 **El códec de voz.** La voz se digitaliza con un códec **ACELP** (*Algebraic Code Excited Linear Prediction*), definido en la **EN 300 395** `[EN395]`. Sus cifras:
 
@@ -490,11 +490,11 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - Produce **137 bits por trama**, lo que da **137 / 0,030 = 4.567 bits/s ≈ 4,567 kbit/s** netos de voz.
 - A esos bits se les añade **codificación de canal** (protección frente a errores), hasta ocupar los **7,2 kbit/s** del intervalo.
 
-> **[DATO CLAVE EXAMEN]** Códec **ACELP** de TETRA: **137 bits cada 30 ms = 4,567 kbit/s** de voz neta; con protección de errores, **7,2 kbit/s** por intervalo. La diferencia entre ambas cifras —casi el 37 % del caudal dedicado a **corregir errores**— es lo que permite que la voz siga siendo inteligible en el borde de la cobertura, y es una de las ventajas de fondo de la radio digital sobre la analógica: en analógico, la degradación es **progresiva** (ruido creciente); en digital, la corrección de errores mantiene la calidad **constante** hasta que se cae de golpe.
+> **[DATO CLAVE]** Códec **ACELP** de TETRA: **137 bits cada 30 ms = 4,567 kbit/s** de voz neta; con protección de errores, **7,2 kbit/s** por intervalo. La diferencia entre ambas cifras —casi el 37 % del caudal dedicado a **corregir errores**— es lo que permite que la voz siga siendo inteligible en el borde de la cobertura, y es una de las ventajas de fondo de la radio digital sobre la analógica: en analógico, la degradación es **progresiva** (ruido creciente); en digital, la corrección de errores mantiene la calidad **constante** hasta que se cae de golpe.
 
 **La protección de errores.** TETRA aplica una cadena clásica: **codificación convolucional** con distintas tasas según la importancia de los bits (los bits más significativos de la voz se protegen más que los menos), **entrelazado** (*interleaving*) para repartir en el tiempo los errores en ráfaga típicos del desvanecimiento, y **comprobación de redundancia cíclica (CRC)** para detectar tramas irrecuperables. Para datos existen tres niveles: **sin protección (7,2 kbit/s)**, **protección baja (4,8 kbit/s)** y **protección alta (2,4 kbit/s)** por intervalo.
 
-> **[REFERENCIA CRUZADA]** Los fundamentos de la modulación digital, la relación entre ancho de banda y tasa binaria y las técnicas de detección y corrección de errores se tratan en el **Tema 33**. Aquí se aplican a un caso concreto y con cifras concretas.
+> **[RELACIÓN CON OTROS TEMAS]** Los fundamentos de la modulación digital, la relación entre ancho de banda y tasa binaria y las técnicas de detección y corrección de errores se tratan en el **Tema 33**. Aquí se aplican a un caso concreto y con cifras concretas.
 
 ### 3.4. Estructura de trama radio y canales lógicos
 
@@ -507,7 +507,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 | **Multitrama** (*multiframe*) | **18 tramas** | **1,02 s** |
 | **Hipertrama** (*hyperframe*) | **60 multitramas** | **61,2 s** |
 
-> **[DATO CLAVE EXAMEN]** **1 intervalo = 14,167 ms · 1 trama = 4 intervalos = 56,67 ms · 1 multitrama = 18 tramas = 1,02 s · 1 hipertrama = 60 multitramas = 61,2 s.** Y el detalle que se pregunta con más frecuencia: **la trama 18 de cada multitrama es la trama de control**, reservada a señalización. Por eso el usuario dispone de **17 de cada 18 tramas** para su tráfico, y no de las 18.
+> **[DATO CLAVE]** **1 intervalo = 14,167 ms · 1 trama = 4 intervalos = 56,67 ms · 1 multitrama = 18 tramas = 1,02 s · 1 hipertrama = 60 multitramas = 61,2 s.** Y el detalle clave: **la trama 18 de cada multitrama es la trama de control**, reservada a señalización. Por eso el usuario dispone de **17 de cada 18 tramas** para su tráfico, y no de las 18.
 
 **Por qué existe la trama de control.** Reservar una trama de cada dieciocho para señalización permite que la red envíe información a un terminal **mientras éste está en conversación**, sin interrumpirla: avisos de llamada entrante, actualizaciones de estado, cambios de clave, órdenes de traspaso. Es lo que hace posible la función de **entrada tardía** (*late entry*): un terminal que se afilia a un grupo con la conversación ya empezada **se entera de que hay una llamada en curso** y se incorpora a ella.
 
@@ -518,7 +518,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **Enlace descendente** (estación base → terminal): **ráfaga normal descendente** (*normal downlink burst*, con **432 bits útiles** en dos bloques de 216), **ráfaga de sincronización** (*synchronisation burst*, que porta la información de temporización y de trama) y **ráfaga de linealización descendente**.
 - **Enlace ascendente** (terminal → estación base): **ráfaga normal ascendente** (**336 bits útiles**, en dos bloques de 168), **ráfaga de control ascendente** (**168 bits**, que ocupa un **subintervalo** y se usa para el acceso aleatorio) y **ráfaga de linealización ascendente**.
 
-> **[DATO CLAVE EXAMEN]** La ráfaga **descendente** es **continua** —la estación base transmite sin interrupción, lo que da a los terminales una referencia permanente de sincronismo— mientras que la **ascendente** es **discontinua**, porque cada terminal solo transmite en su intervalo. La **ráfaga de control ascendente** ocupa **medio intervalo** (*subslot*) y es la que se usa para el **acceso aleatorio**, es decir, para pedir recurso al sistema; por eso las colisiones se resuelven ahí y no en los canales de tráfico.
+> **[DATO CLAVE]** La ráfaga **descendente** es **continua** —la estación base transmite sin interrupción, lo que da a los terminales una referencia permanente de sincronismo— mientras que la **ascendente** es **discontinua**, porque cada terminal solo transmite en su intervalo. La **ráfaga de control ascendente** ocupa **medio intervalo** (*subslot*) y es la que se usa para el **acceso aleatorio**, es decir, para pedir recurso al sistema; por eso las colisiones se resuelven ahí y no en los canales de tráfico.
 
 **Los canales lógicos.** Sobre esa estructura física, la capa MAC define **canales lógicos**, que son los que transportan cada tipo de información. Se agrupan en dos familias:
 
@@ -541,7 +541,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 | **TCH/4,8** | Datos con **protección baja**, 4,8 kbit/s |
 | **TCH/2,4** | Datos con **protección alta**, 2,4 kbit/s |
 
-> **[DATO CLAVE EXAMEN]** Distinguir **canal físico** (un intervalo de una portadora) de **canal lógico** (el tipo de información que se transporta sobre él). Y dentro de los lógicos, las dos familias: **de control (CCH)** y **de tráfico (TCH)**. El **canal de control principal (MCCH)** es el canal lógico de control que la estación base mantiene permanentemente activo en el **intervalo 1 de la portadora principal**.
+> **[DATO CLAVE]** Distinguir **canal físico** (un intervalo de una portadora) de **canal lógico** (el tipo de información que se transporta sobre él). Y dentro de los lógicos, las dos familias: **de control (CCH)** y **de tráfico (TCH)**. El **canal de control principal (MCCH)** es el canal lógico de control que la estación base mantiene permanentemente activo en el **intervalo 1 de la portadora principal**.
 
 > **[EJERCICIO RESUELTO]** **Calcular la capacidad real de una estación base municipal.**
 >
@@ -559,7 +559,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 >
 > **Comparación**: para dar 11 canales de voz simultáneos con radio convencional analógica de 12,5 kHz harían falta **11 parejas de frecuencias**, es decir, **137,5 kHz en cada sentido**, y además **rígidamente asignadas**. Es la ventaja del *trunking* y del TDMA sumadas.
 
-> **[EJEMPLO AYTO MADRID]** Estas cifras explican por qué la red municipal puede atender simultáneamente a **más de 3.000 efectivos** `[TELEFONICA-2026]` con un número modesto de portadoras: en un momento cualquiera, la inmensa mayoría de esos efectivos **están escuchando, no hablando**, y escuchar **no consume canal en su célula si nadie de su grupo transmite allí**. El dimensionado de una red de emergencia no se hace por número de usuarios, sino por **número de transmisiones simultáneas previstas en la hora punta de la célula más cargada**, con un margen holgado para el escenario de gran emergencia, en el que todo el mundo quiere hablar a la vez.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Estas cifras explican por qué la red municipal puede atender simultáneamente a **más de 3.000 efectivos** `[TELEFONICA-2026]` con un número modesto de portadoras: en un momento cualquiera, la inmensa mayoría de esos efectivos **están escuchando, no hablando**, y escuchar **no consume canal en su célula si nadie de su grupo transmite allí**. El dimensionado de una red de emergencia no se hace por número de usuarios, sino por **número de transmisiones simultáneas previstas en la hora punta de la célula más cargada**, con un margen holgado para el escenario de gran emergencia, en el que todo el mundo quiere hablar a la vez.
 ---
 ## 4. Servicios y seguridad en sistemas TETRA
 
@@ -569,7 +569,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 2. **Servicios portadores** (*bearer services*): los que ofrecen **transporte de información** entre dos puntos, dejando al usuario la aplicación. En TETRA, los servicios de **datos** por circuito y por paquetes.
 3. **Servicios suplementarios**: los que **modifican o complementan** a los anteriores. Es la familia más rica de TETRA y la que le da su carácter de sistema profesional: prioridad, desalojo, escucha ambiente, escucha discreta, DGNA, identificación, desvío, inclusión, entrada tardía, inhabilitación remota.
 
-> **[DATO CLAVE EXAMEN]** Las tres familias del estándar: **teleservicios** (voz), **servicios portadores** (datos) y **servicios suplementarios** (las funciones profesionales). Los **servicios suplementarios** están normalizados en las **partes 9 a 12 de la EN 300 392**, y son **más de una treintena**. Que existan **normalizados** —y no como extensiones de fabricante— es una de las razones del éxito de TETRA.
+> **[DATO CLAVE]** Las tres familias del estándar: **teleservicios** (voz), **servicios portadores** (datos) y **servicios suplementarios** (las funciones profesionales). Los **servicios suplementarios** están normalizados en las **partes 9 a 12 de la EN 300 392**, y son **más de una treintena**. Que existan **normalizados** —y no como extensiones de fabricante— es una de las razones del éxito de TETRA.
 
 ### 4.1. Servicios de voz y comunicaciones de grupo
 
@@ -590,11 +590,11 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **Semidúplex**, con PTT, como una llamada de grupo de dos personas.
 - **Dúplex completo** (*full duplex*), como una llamada telefónica convencional: ambos hablan y escuchan a la vez. Consume **dos intervalos** (uno en cada sentido) y por eso se usa con moderación.
 
-**Llamada de difusión (*broadcast call*).** Es una llamada **unidireccional de uno a muchos**: el emisor habla y los destinatarios **solo escuchan**, sin posibilidad de responder. Se usa para avisos generales del centro de mando a toda una flota o a todos los usuarios de la red. La clave para el examen es la **unidireccionalidad**.
+**Llamada de difusión (*broadcast call*).** Es una llamada **unidireccional de uno a muchos**: el emisor habla y los destinatarios **solo escuchan**, sin posibilidad de responder. Se usa para avisos generales del centro de mando a toda una flota o a todos los usuarios de la red. La clave es la **unidireccionalidad**.
 
 **Llamada telefónica (*PABX/PSTN call*).** A través de las pasarelas de la **EN 300 392-4**, un terminal puede llamar a la centralita corporativa o a la red telefónica pública, y recibir llamadas de ellas, con las autorizaciones que fije el operador de la red.
 
-> **[DATO CLAVE EXAMEN]** Los cuatro tipos: **grupo** (uno a muchos, **bidireccional**, semidúplex), **individual** (uno a uno, semidúplex o **dúplex completo**), **difusión** (uno a muchos, **unidireccional**: los receptores no pueden contestar) y **telefónica** (hacia PSTN/PABX). La diferencia entre **grupo** y **difusión** es que en la primera **cualquiera puede tomar la palabra** y en la segunda **no**.
+> **[DATO CLAVE]** Los cuatro tipos: **grupo** (uno a muchos, **bidireccional**, semidúplex), **individual** (uno a uno, semidúplex o **dúplex completo**), **difusión** (uno a muchos, **unidireccional**: los receptores no pueden contestar) y **telefónica** (hacia PSTN/PABX). La diferencia entre **grupo** y **difusión** es que en la primera **cualquiera puede tomar la palabra** y en la segunda **no**.
 
 **La gestión de grupos, que es donde está la potencia operativa.**
 
@@ -603,7 +603,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **DGNA** (*Dynamic Group Number Assignment*), **asignación dinámica de número de grupo**: el centro de mando puede **crear un grupo nuevo y cargarlo en los terminales seleccionados por el aire**, sin tocar los equipos. Es la función que permite montar en segundos un grupo mixto para una emergencia concreta —policía, bomberos y sanitarios de un incidente— y disolverlo al terminar.
 - **Grupos por patrón geográfico**: los grupos pueden asociarse a zonas, de modo que un terminal se afilie automáticamente al grupo del distrito en el que se encuentra.
 
-> **[DATO CLAVE EXAMEN]** **DGNA = asignación dinámica de grupos por el aire desde el centro de control.** Es la función que hace impensable volver a la radio convencional: en convencional, cambiar la organización de grupos obliga a **reprogramar físicamente cada equipo**; con DGNA se hace desde una consola, en caliente y sobre los terminales elegidos.
+> **[DATO CLAVE]** **DGNA = asignación dinámica de grupos por el aire desde el centro de control.** Es la función que hace impensable volver a la radio convencional: en convencional, cambiar la organización de grupos obliga a **reprogramar físicamente cada equipo**; con DGNA se hace desde una consola, en caliente y sobre los terminales elegidos.
 
 **Los servicios suplementarios de voz que hay que saber nombrar:**
 
@@ -613,7 +613,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **Identificación de la parte llamante**: en pantalla aparece el **alias** de quien habla, algo que la radio analógica no podía dar.
 - **Inhabilitación remota**: **desactivación temporal** (*stun*) o **permanente** (*kill*) de un terminal robado o extraviado, ordenada desde el centro de gestión.
 
-> **[EJEMPLO AYTO MADRID]** La **escucha ambiente** y la **inhabilitación remota** son ejemplos de funciones con un **impacto directo en derechos** que exigen procedimiento escrito, autorización y registro. Un terminal municipal es un instrumento de trabajo entregado a un empleado público, y activar su micrófono a distancia o dejarlo inservible son actuaciones que deben estar **previstas, motivadas y trazadas**. En términos de la normativa de seguridad, la traza queda amparada por las medidas de **registro de actividad** del ENS; en términos de protección de datos, requieren información previa a la persona trabajadora y una base jurídica clara. El examen puede preguntar por la función técnica; el caso práctico, por la garantía que la rodea.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** La **escucha ambiente** y la **inhabilitación remota** son ejemplos de funciones con un **impacto directo en derechos** que exigen procedimiento escrito, autorización y registro. Un terminal municipal es un instrumento de trabajo entregado a un empleado público, y activar su micrófono a distancia o dejarlo inservible son actuaciones que deben estar **previstas, motivadas y trazadas**. En términos de la normativa de seguridad, la traza queda amparada por las medidas de **registro de actividad** del ENS; en términos de protección de datos, requieren información previa a la persona trabajadora y una base jurídica clara. El examen puede preguntar por la función técnica; el caso práctico, por la garantía que la rodea.
 
 #### 4.1.2. Gestión de prioridades y llamadas de emergencia
 
@@ -629,7 +629,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **Alarma visual y sonora** en la consola de despacho, con la **identidad** y, si el terminal la envía, la **posición** del usuario.
 - Apertura de un **canal de voz abierto** desde ese terminal, en algunas configuraciones sin necesidad de que el agente pulse el PTT —de modo que, si está incapacitado, el centro de mando **oye igualmente lo que ocurre**—.
 
-> **[DATO CLAVE EXAMEN]** Los tres escalones: **prioridad de acceso** (ordena la cola) → **prioridad con desalojo** (*pre-emption*, **corta** una llamada en curso de menor prioridad) → **llamada de emergencia** (máxima prioridad, alarma en despacho, identidad y posición). La diferencia entre los dos primeros es exactamente la que hay entre **esperar mejor** y **echar a otro**.
+> **[DATO CLAVE]** Los tres escalones: **prioridad de acceso** (ordena la cola) → **prioridad con desalojo** (*pre-emption*, **corta** una llamada en curso de menor prioridad) → **llamada de emergencia** (máxima prioridad, alarma en despacho, identidad y posición). La diferencia entre los dos primeros es exactamente la que hay entre **esperar mejor** y **echar a otro**.
 
 **Las funciones asociadas al agente en riesgo.** Los terminales profesionales incorporan detecciones automáticas que disparan la alarma sin intervención del usuario:
 
@@ -637,7 +637,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 - **Alarma de inactividad** (*lone worker*): el terminal pide confirmación periódica y, si no la recibe, avisa.
 - **Botón de emergencia oculto**, activable sin sacar el equipo.
 
-> **[EJEMPLO AYTO MADRID]** El **CISEM** coordina Policía Municipal, Bomberos, SAMUR-Protección Civil y Agentes de Movilidad, con del orden de **3.000 incidentes diarios** `[CISEM]`. Sobre ese volumen, la gestión de prioridades no es un refinamiento teórico: es lo que asegura que una **alarma de agente en riesgo** entre por delante de las decenas de comunicaciones rutinarias que puedan estar cursándose en el mismo instante en la misma célula. Y la razón por la que ese comportamiento **no se puede replicar con teléfonos móviles comerciales**: en una red pública, el Ayuntamiento **no decide** a quién se desaloja.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El **CISEM** coordina Policía Municipal, Bomberos, SAMUR-Protección Civil y Agentes de Movilidad, con del orden de **3.000 incidentes diarios** `[CISEM]`. Sobre ese volumen, la gestión de prioridades no es un refinamiento teórico: es lo que asegura que una **alarma de agente en riesgo** entre por delante de las decenas de comunicaciones rutinarias que puedan estar cursándose en el mismo instante en la misma célula. Y la razón por la que ese comportamiento **no se puede replicar con teléfonos móviles comerciales**: en una red pública, el Ayuntamiento **no decide** a quién se desaloja.
 
 ### 4.2. Servicios de datos
 
@@ -659,7 +659,7 @@ Y como la portadora se divide en **4 intervalos**, a cada uno le corresponden **
 
 Sobre el tipo 4 se define además el **SDS-TL** (*SDS Transport Layer*), una capa de transporte que añade **identificación del protocolo de aplicación, acuse de recibo y encadenamiento**, y que es la base sobre la que funcionan la mensajería de texto real, el envío de posición y las aplicaciones de gestión.
 
-> **[DATO CLAVE EXAMEN]** **Estado = 16 bits precodificados**; **SDS tipo 1 = 16 bits, tipo 2 = 32 bits, tipo 3 = 64 bits, tipo 4 = hasta 2.047 bits** definidos por el usuario. La distinción **estado / SDS tipo 4** es la más preguntada: el **estado** es un código de una lista cerrada que se envía con una tecla y consume casi nada; el **tipo 4** es carga útil libre. El **SDS-TL** es la capa que le añade acuse de recibo y encadenamiento.
+> **[DATO CLAVE]** **Estado = 16 bits precodificados**; **SDS tipo 1 = 16 bits, tipo 2 = 32 bits, tipo 3 = 64 bits, tipo 4 = hasta 2.047 bits** definidos por el usuario. La distinción **estado / SDS tipo 4** es la más importante: el **estado** es un código de una lista cerrada que se envía con una tecla y consume casi nada; el **tipo 4** es carga útil libre. El **SDS-TL** es la capa que le añade acuse de recibo y encadenamiento.
 
 **El uso masivo del SDS: la localización.** La aplicación que más tráfico SDS genera en una red real es el **envío periódico de la posición GNSS** de cada terminal al sistema de gestión de flotas. Se transporta en SDS tipo 4 mediante el **protocolo de información de localización (LIP)** normalizado por el ETSI, que define cómo se codifican coordenadas, precisión, velocidad y rumbo, y **bajo qué condiciones se emite** (por tiempo, por distancia recorrida, por cambio de estado o a petición).
 
@@ -689,13 +689,13 @@ Es un modo **ineficiente** para tráfico a ráfagas —el canal está reservado 
 
 **Datos por paquetes (*packet data*, PD).** El terminal comparte los recursos con otros y **solo consume canal cuando hay paquetes que enviar**. TETRA transporta **IP** sobre este servicio mediante el protocolo **SNDCP** (*Subnetwork Dependent Convergence Protocol*) de la capa 3, de modo que, desde el punto de vista de la aplicación, **el terminal es un dispositivo IP más**. Es el modo adecuado para consultas a sistemas de información, mensajería de aplicación y sincronización de datos.
 
-> **[DATO CLAVE EXAMEN]** **Circuito = recurso reservado, tasa garantizada, ineficiente para tráfico a ráfagas. Paquetes = recurso compartido, transporte de IP mediante SNDCP, eficiente para tráfico a ráfagas.** Y el techo de TETRA Release 1, que es la cifra que hay que retener: **28,8 kbit/s** con los cuatro intervalos y sin protección de errores. Ese techo es la razón de ser de **TEDS** (§5.4).
+> **[DATO CLAVE]** **Circuito = recurso reservado, tasa garantizada, ineficiente para tráfico a ráfagas. Paquetes = recurso compartido, transporte de IP mediante SNDCP, eficiente para tráfico a ráfagas.** Y el techo de TETRA Release 1, que es la cifra que hay que retener: **28,8 kbit/s** con los cuatro intervalos y sin protección de errores. Ese techo es la razón de ser de **TEDS** (§5.4).
 
 **Qué se puede y qué no se puede hacer con esas cifras.** Con 28,8 kbit/s en el mejor de los casos —y realistamente con 7,2 o 14,4 kbit/s— se pueden hacer: mensajería de texto, envío de posiciones, consultas a bases de datos con respuestas breves, formularios, telemetría, envío de una fotografía comprimida en decenas de segundos y actualización de datos operativos. **No** se pueden hacer: vídeo, transmisión de planos o imágenes grandes en tiempo real, acceso a aplicaciones web modernas ni transferencia de ficheros de tamaño ordinario.
 
-> **[EJEMPLO AYTO MADRID]** Ese límite explica una realidad muy visible en la operativa municipal: los servicios de emergencia trabajan con **dos canales de datos en paralelo**. La **radio TETRA** transporta lo crítico y lo breve —estados, posiciones, órdenes, avisos— con disponibilidad garantizada; y una **conexión de datos comercial** (4G/5G) transporta lo voluminoso —imágenes, historia clínica, cartografía, vídeo— **sin garantía de disponibilidad**. La consecuencia operativa es clara y conviene tenerla presente en cualquier caso práctico: **lo que no puede fallar va por la radio propia; lo que aporta valor pero puede esperar va por la red comercial**. La convergencia de ambos mundos es lo que persigue la banda ancha crítica (§5.4).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Ese límite explica una realidad muy visible en la operativa municipal: los servicios de emergencia trabajan con **dos canales de datos en paralelo**. La **radio TETRA** transporta lo crítico y lo breve —estados, posiciones, órdenes, avisos— con disponibilidad garantizada; y una **conexión de datos comercial** (4G/5G) transporta lo voluminoso —imágenes, historia clínica, cartografía, vídeo— **sin garantía de disponibilidad**. La consecuencia operativa es clara y conviene tenerla presente en cualquier caso práctico: **lo que no puede fallar va por la radio propia; lo que aporta valor pero puede esperar va por la red comercial**. La convergencia de ambos mundos es lo que persigue la banda ancha crítica (§5.4).
 
-> **[REFERENCIA CRUZADA]** El transporte de **IP** sobre un enlace de radio de baja capacidad, el efecto del retardo y de la pérdida sobre TCP y los mecanismos de compresión de cabeceras se tratan en el **Tema 34**. El diseño de aplicaciones que funcionen sobre enlaces así —peticiones pequeñas, tolerancia a la desconexión, sincronización diferida— es materia del **Tema 24**.
+> **[RELACIÓN CON OTROS TEMAS]** El transporte de **IP** sobre un enlace de radio de baja capacidad, el efecto del retardo y de la pérdida sobre TCP y los mecanismos de compresión de cabeceras se tratan en el **Tema 34**. El diseño de aplicaciones que funcionen sobre enlaces así —peticiones pequeñas, tolerancia a la desconexión, sincronización diferida— es materia del **Tema 24**.
 
 ### 4.3. Mecanismos de seguridad
 
@@ -708,7 +708,7 @@ Es un modo **ineficiente** para tráfico a ráfagas —el canal está reservado 
 
 A ellos se añaden la **inhabilitación remota** de terminales (§4.1.1) y la **gestión de claves**, incluida su distribución **por el aire (OTAR)**.
 
-> **[DATO CLAVE EXAMEN]** La distinción decisiva del apartado: **el cifrado de interfaz aire protege el tramo radio y se descifra en la estación base**; **el cifrado extremo a extremo protege el contenido de punta a punta y la infraestructura no puede leerlo**. Son **complementarios**, no alternativos. Todo lo demás de esta sección se ordena alrededor de esa frase.
+> **[DATO CLAVE]** La distinción decisiva del apartado: **el cifrado de interfaz aire protege el tramo radio y se descifra en la estación base**; **el cifrado extremo a extremo protege el contenido de punta a punta y la infraestructura no puede leerlo**. Son **complementarios**, no alternativos. Todo lo demás de esta sección se ordena alrededor de esa frase.
 
 #### 4.3.1. Autenticación de usuarios y terminales
 
@@ -721,11 +721,11 @@ A ellos se añaden la **inhabilitación remota** de terminales (§4.1.1) y la **
 
 **La autenticación mutua.** El mismo mecanismo puede ejecutarse **en sentido contrario**, de modo que **el terminal verifique a la red**. Es esencial: sin autenticación de la red, un atacante puede montar una **estación base falsa** que atraiga a los terminales de la zona —el equivalente radioeléctrico de un punto de acceso *rogue*— y desde ella degradar la seguridad, capturar tráfico o inyectar mensajes.
 
-> **[DATO CLAVE EXAMEN]** La autenticación de TETRA es **simétrica, de desafío-respuesta**, con la clave **K** que **no se transmite nunca**, y **puede ser mutua**. La autenticación mutua es la defensa contra la **estación base falsa**. La familia de algoritmos original es **TAA1**; el conjunto nuevo, asociado al TEA set B, es **TAA2**, y trabaja con una clave de autenticación denominada **K2** `[TTR001-11]`.
+> **[DATO CLAVE]** La autenticación de TETRA es **simétrica, de desafío-respuesta**, con la clave **K** que **no se transmite nunca**, y **puede ser mutua**. La autenticación mutua es la defensa contra la **estación base falsa**. La familia de algoritmos original es **TAA1**; el conjunto nuevo, asociado al TEA set B, es **TAA2**, y trabaja con una clave de autenticación denominada **K2** `[TTR001-11]`.
 
 **Y el subproducto más importante de la autenticación: la clave de sesión.** Del proceso de autenticación se **deriva** una clave de cifrado propia de ese terminal y de esa sesión, la **DCK** (*Derived Cipher Key*). Es decir: **autenticar y cifrar están encadenados**. Una red que no autentica no puede usar claves derivadas y tiene que conformarse con claves estáticas precargadas, mucho más débiles porque **son las mismas para todos y durante mucho tiempo**.
 
-**La jerarquía de claves, que se pregunta.**
+**La jerarquía de claves.**
 
 | Clave | Nombre | Qué protege | Cómo se obtiene |
 |---|---|---|---|
@@ -738,13 +738,13 @@ A ellos se añaden la **inhabilitación remota** de terminales (§4.1.1) y la **
 
 **OTAR** (*Over The Air Re-keying*), **la distribución de claves por el aire**, es lo que hace manejable todo lo anterior: permite **renovar las claves de miles de terminales sin recogerlos**, algo imprescindible cuando una clave se compromete o cuando se da de baja a un usuario. Las claves viajan **selladas** con otra clave, nunca en claro.
 
-> **[REFERENCIA CRUZADA]** Los conceptos de **clave simétrica**, **desafío-respuesta**, **derivación de claves** y **gestión del ciclo de vida de las claves** se desarrollan en el **Tema 32**. La obligación jurídica de proteger el material criptográfico está en la medida **`op.exp.10`, «protección de claves criptográficas», del ENS** `[ENS]`, y es directamente aplicable a la gestión de claves de una red TETRA municipal.
+> **[RELACIÓN CON OTROS TEMAS]** Los conceptos de **clave simétrica**, **desafío-respuesta**, **derivación de claves** y **gestión del ciclo de vida de las claves** se desarrollan en el **Tema 32**. La obligación jurídica de proteger el material criptográfico está en la medida **`op.exp.10`, «protección de claves criptográficas», del ENS** `[ENS]`, y es directamente aplicable a la gestión de claves de una red TETRA municipal.
 
 #### 4.3.2. Cifrado en la interfaz aire
 
 **Qué protege y qué no.** El **cifrado de interfaz aire** (**AIE**, *Air Interface Encryption*) cifra **todo lo que viaja por radio entre el terminal y la estación base**: la voz, los datos, la señalización y —si se activa el cifrado de identidades— las propias identidades. Se aplica en la **capa 2** del interfaz aire. **Se descifra en la estación base**: a partir de ahí, la comunicación circula por la infraestructura del operador de la red **en claro**, salvo que se aplique cifrado adicional en el transporte o cifrado extremo a extremo.
 
-> **[DATO CLAVE EXAMEN]** El AIE **no protege frente al propio operador de la red**, porque el tráfico se descifra en la estación base. Protege frente a **quien escucha el aire**. Es exactamente la razón por la que los usuarios más exigentes añaden **cifrado extremo a extremo** (§4.3.3).
+> **[DATO CLAVE]** El AIE **no protege frente al propio operador de la red**, porque el tráfico se descifra en la estación base. Protege frente a **quien escucha el aire**. Es exactamente la razón por la que los usuarios más exigentes añaden **cifrado extremo a extremo** (§4.3.3).
 
 **Las clases de seguridad.** El estándar define tres, y hay que saberlas `[TTR001-11]`:
 
@@ -768,7 +768,7 @@ El informe técnico de la TCCA recoge además un detalle operativo relevante: la
 | **TEA3** | Servicios de emergencia y militares **fuera de Europa**, en países afines | Restringido |
 | **TEA4** | Uso civil general, variante de TEA1 | Restringido |
 
-> **[DATO CLAVE EXAMEN]** **TEA1 y TEA4** son los de uso **civil y exportación amplia**; **TEA2** es el de las **redes de emergencia europeas**; **TEA3**, el de emergencia y militar **extraeuropeo**. La clave nominal de todos ellos es de **80 bits**, pero **TEA1 tiene una reducción deliberada de la longitud efectiva**. Los algoritmos fueron **secretos** durante casi treinta años; el ETSI publicó la especificación del **TEA set A** en la **TS 104 053-1** en **febrero de 2025** `[TS104053]`.
+> **[DATO CLAVE]** **TEA1 y TEA4** son los de uso **civil y exportación amplia**; **TEA2** es el de las **redes de emergencia europeas**; **TEA3**, el de emergencia y militar **extraeuropeo**. La clave nominal de todos ellos es de **80 bits**, pero **TEA1 tiene una reducción deliberada de la longitud efectiva**. Los algoritmos fueron **secretos** durante casi treinta años; el ETSI publicó la especificación del **TEA set A** en la **TS 104 053-1** en **febrero de 2025** `[TS104053]`.
 
 **TETRA:BURST: la investigación que cambió el escenario.** En **agosto de 2023**, el equipo neerlandés **Midnight Blue** publicó, tras un proceso de divulgación coordinada y con un artículo revisado en **USENIX Security 2023**, cinco vulnerabilidades bautizadas como **TETRA:BURST** `[TETRABURST]`. Las cuatro citables son:
 
@@ -787,7 +787,7 @@ El informe técnico de la TCCA recoge además un detalle operativo relevante: la
 
 El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y con el nuevo conjunto de autenticación **TAA2** y su clave **K2** `[TTR001-11]`. Según la TCCA, **TEA5 y TEA6 usan claves de 192 bits**, mientras que **TEA7 conserva una reducción de la longitud efectiva a 56 bits** por las mismas razones de control de exportación que en su día afectaron a TEA1 `[TCCA-RD]`.
 
-> **[DATO CLAVE EXAMEN]** **TEA set B = TEA5, TEA6 y TEA7, liberado en octubre de 2022.** Correspondencias: **TEA5 ← TEA2**, **TEA6 ← TEA3**, **TEA7 ← TEA1**. Y el matiz que se pregunta: **TEA7, el civil, sigue teniendo una longitud de clave efectiva reducida (56 bits)** por el régimen de exportación, mientras que TEA5 y TEA6 llevan **192 bits**. La lección de fondo, muy citable: **la debilidad de TEA1 no fue un error de diseño, sino una decisión de política de exportación**.
+> **[DATO CLAVE]** **TEA set B = TEA5, TEA6 y TEA7, liberado en octubre de 2022.** Correspondencias: **TEA5 ← TEA2**, **TEA6 ← TEA3**, **TEA7 ← TEA1**. Y el matiz clave: **TEA7, el civil, sigue teniendo una longitud de clave efectiva reducida (56 bits)** por el régimen de exportación, mientras que TEA5 y TEA6 llevan **192 bits**. La lección de fondo, muy citable: **la debilidad de TEA1 no fue un error de diseño, sino una decisión de política de exportación**.
 
 **2TETRA:2BURST (agosto de 2025).** El mismo equipo presentó en **Black Hat USA el 7 de agosto de 2025** una segunda tanda `[2TETRA]`, y su alcance es mayor porque **llega al cifrado extremo a extremo**:
 
@@ -796,7 +796,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 - **MBPH-2025-001** — la corrección publicada por el ETSI para **CVE-2022-24401** **no impide** la recuperación del flujo de clave.
 - **CVE-2025-52940, 52941 y 52942** — afectan al **cifrado extremo a extremo** y se tratan en §4.3.3.
 
-> **[DATO CLAVE EXAMEN]** Dos hallazgos de 2025 con consecuencia práctica inmediata para un gestor de red: **(1) soportar TEA1 «por compatibilidad» compromete también a los algoritmos fuertes de la misma red** (CVE-2025-52943); y **(2) el protocolo no autentica los mensajes** (CVE-2025-52944), de modo que la integridad depende de las capas superiores. La primera es la que convierte «desactivar TEA1» en una **decisión de configuración obligatoria**, no en una recomendación.
+> **[DATO CLAVE]** Dos hallazgos de 2025 con consecuencia práctica inmediata para un gestor de red: **(1) soportar TEA1 «por compatibilidad» compromete también a los algoritmos fuertes de la misma red** (CVE-2025-52943); y **(2) el protocolo no autentica los mensajes** (CVE-2025-52944), de modo que la integridad depende de las capas superiores. La primera es la que convierte «desactivar TEA1» en una **decisión de configuración obligatoria**, no en una recomendación.
 
 **Cómo debe leerse todo esto, sin alarmismo y sin complacencia.** Tres precisiones que conviene sostener en un examen o en un informe:
 
@@ -804,7 +804,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 2. **Pero sí obligan a decisiones concretas**: usar **SC3** con **autenticación mutua**, **no soportar TEA1**, migrar a **TEA set B** y **TAA2** cuando el parque lo permita, activar el **cifrado de identidades**, aplicar los parches del fabricante y **añadir cifrado extremo a extremo** en las comunicaciones sensibles.
 3. **Y dejan una lección de método**: la seguridad por oscuridad falló. Los algoritmos estuvieron **secretos treinta años** y su debilidad se descubrió **en cuanto se pudieron examinar**. La publicación del TEA set A en 2025 es el reconocimiento implícito de ese principio.
 
-> **[EJEMPLO AYTO MADRID]** Para una red municipal, la traducción de lo anterior a un pliego es directa y es exactamente lo que un examinador espera ver: exigir **clase de seguridad SC3** con **autenticación mutua** como configuración por defecto; **prohibir expresamente TEA1** en la red, no solo «no usarlo»; exigir **capacidad de migración a TEA set B y TAA2** en los terminales que se adquieran a partir de ahora; exigir **OTAR** para poder renovar claves sin recoger 4.500 equipos; y exigir **procedimiento documentado de inhabilitación remota** de terminales perdidos. Todo ello con respaldo normativo en el ENS: **`mp.com.2`** (confidencialidad), **`mp.com.3`** (integridad y autenticidad), **`mp.si.2`** (criptografía) y **`op.exp.10`** (protección de claves criptográficas) `[ENS]`.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Para una red municipal, la traducción de lo anterior a un pliego es directa y es exactamente lo que un examinador espera ver: exigir **clase de seguridad SC3** con **autenticación mutua** como configuración por defecto; **prohibir expresamente TEA1** en la red, no solo «no usarlo»; exigir **capacidad de migración a TEA set B y TAA2** en los terminales que se adquieran a partir de ahora; exigir **OTAR** para poder renovar claves sin recoger 4.500 equipos; y exigir **procedimiento documentado de inhabilitación remota** de terminales perdidos. Todo ello con respaldo normativo en el ENS: **`mp.com.2`** (confidencialidad), **`mp.com.3`** (integridad y autenticidad), **`mp.si.2`** (criptografía) y **`op.exp.10`** (protección de claves criptográficas) `[ENS]`.
 
 #### 4.3.3. Cifrado extremo a extremo (E2EE)
 
@@ -825,7 +825,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 2. **La gestión de claves es responsabilidad del usuario**, y su complejidad crece con el tamaño de la flota y con la necesidad de interoperar con otros organismos.
 3. **Consume capacidad**: la sincronización del cifrado ocupa bits que salen del caudal de voz, con un impacto pequeño pero no nulo.
 
-> **[DATO CLAVE EXAMEN]** **AIE = terminal ↔ estación base; se descifra en la red. E2EE = terminal ↔ terminal; la red no puede leerlo.** Se usan **juntos**. El ETSI **no normaliza el algoritmo de E2EE**, solo el marco de transporte y sincronización; el algoritmo predominante hoy es **AES**.
+> **[DATO CLAVE]** **AIE = terminal ↔ estación base; se descifra en la red. E2EE = terminal ↔ terminal; la red no puede leerlo.** Se usan **juntos**. El ETSI **no normaliza el algoritmo de E2EE**, solo el marco de transporte y sincronización; el algoritmo predominante hoy es **AES**.
 
 **El hallazgo de 2025 sobre el E2EE.** La segunda tanda de Midnight Blue alcanzó precisamente a esta capa `[2TETRA]`:
 
@@ -833,9 +833,9 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 - **CVE-2025-52940** — la voz cifrada extremo a extremo es vulnerable a **ataques de repetición** e **inyección de voz**.
 - **CVE-2025-52942** — los **SDS** cifrados extremo a extremo **carecen de protección antirrepetición**, de modo que un mensaje capturado puede reinyectarse tal cual.
 
-> **[DATO CLAVE EXAMEN]** El **E2EE no es una garantía automática**: depende del algoritmo **concreto** que se haya implantado y de si incorpora **protección antirrepetición** y **autenticación del mensaje**. La lección para un pliego es que **no basta con exigir «cifrado extremo a extremo»**: hay que exigir **algoritmo y longitud de clave nombrados**, **protección frente a repetición** y **autenticación del contenido**, y reservarse el derecho de auditar la implementación.
+> **[DATO CLAVE]** El **E2EE no es una garantía automática**: depende del algoritmo **concreto** que se haya implantado y de si incorpora **protección antirrepetición** y **autenticación del mensaje**. La lección para un pliego es que **no basta con exigir «cifrado extremo a extremo»**: hay que exigir **algoritmo y longitud de clave nombrados**, **protección frente a repetición** y **autenticación del contenido**, y reservarse el derecho de auditar la implementación.
 
-> **[REFERENCIA CRUZADA]** La distinción entre **cifrado en tránsito por tramos** y **cifrado extremo a extremo**, y la razón por la que el segundo no sustituye al primero, es la misma que aparece en el **Tema 35** a propósito de TLS y en el **Tema 36** a propósito de las VPN. Los conceptos de **entropía de clave**, **ataque de repetición** y **autenticación de mensaje** están en el **Tema 32**.
+> **[RELACIÓN CON OTROS TEMAS]** La distinción entre **cifrado en tránsito por tramos** y **cifrado extremo a extremo**, y la razón por la que el segundo no sustituye al primero, es la misma que aparece en el **Tema 35** a propósito de TLS y en el **Tema 36** a propósito de las VPN. Los conceptos de **entropía de clave**, **ataque de repetición** y **autenticación de mensaje** están en el **Tema 32**.
 ---
 ## 5. Ámbito público, normativa y evolución tecnológica
 
@@ -856,7 +856,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 | **Trazabilidad** | Grabación e identidad en todas las transmisiones | No integrada |
 | **Terminal de trabajo** | Robusto, con PTT, botón de emergencia, «hombre caído» | Terminal de consumo |
 
-> **[DATO CLAVE EXAMEN]** Las **cinco** razones que justifican una red propia de radio frente a la telefonía comercial, y que conviene saber enumerar de corrido: **grupo, inmediatez, prioridad garantizada, funcionamiento sin infraestructura y control de la disponibilidad por su titular**. Ninguna de ellas es una cuestión de calidad de audio ni de cobertura: son cuestiones de **control**.
+> **[DATO CLAVE]** Las **cinco** razones que justifican una red propia de radio frente a la telefonía comercial, y que conviene saber enumerar de corrido: **grupo, inmediatez, prioridad garantizada, funcionamiento sin infraestructura y control de la disponibilidad por su titular**. Ninguna de ellas es una cuestión de calidad de audio ni de cobertura: son cuestiones de **control**.
 
 **El mapa español, que es donde está la trampa del tema.** En España conviven tres niveles de red de emergencia, y **no todos usan la misma tecnología**:
 
@@ -866,23 +866,23 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 | **Autonómico** | Redes propias de las comunidades autónomas | **TETRA** en la mayoría de los casos | Bomberos autonómicos, agentes forestales, emergencias sanitarias, 112, protección civil, policías locales adheridas |
 | **Local** | Redes municipales de las grandes ciudades | **TETRA** | Policía local, bomberos municipales, emergencias, servicios urbanos |
 
-> **[DATO CLAVE EXAMEN]** **El SIRDEE —Sistema de Radiocomunicaciones Digitales de Emergencia del Estado, en servicio desde el año 2000— está construido sobre TETRAPOL, no sobre TETRA** `[SIRDEE]`. Es **la** confusión del tema. La razón histórica es que su despliegue se decidió a finales de los años noventa, cuando TETRA aún no estaba maduro comercialmente y TETRAPOL sí. Las redes **autonómicas y municipales**, decididas más tarde, se hicieron en su mayoría **con TETRA**. La consecuencia práctica es que **la interoperabilidad entre el nivel estatal y los otros dos no puede resolverse con la ISI**, sino con pasarelas o con acoplamiento en los centros de mando (§2.3.2).
+> **[DATO CLAVE]** **El SIRDEE —Sistema de Radiocomunicaciones Digitales de Emergencia del Estado, en servicio desde el año 2000— está construido sobre TETRAPOL, no sobre TETRA** `[SIRDEE]`. Es **la** confusión del tema. La razón histórica es que su despliegue se decidió a finales de los años noventa, cuando TETRA aún no estaba maduro comercialmente y TETRAPOL sí. Las redes **autonómicas y municipales**, decididas más tarde, se hicieron en su mayoría **con TETRA**. La consecuencia práctica es que **la interoperabilidad entre el nivel estatal y los otros dos no puede resolverse con la ISI**, sino con pasarelas o con acoplamiento en los centros de mando (§2.3.2).
 
 **La red autonómica madrileña.** La Comunidad de Madrid opera su propia red TETRA, gestionada por la **Agencia de Seguridad y Emergencias Madrid 112 (ASEM 112)**, con **113 estaciones base** y **5.316 terminales** `[CM-TETRA]`. Da servicio al **Cuerpo de Bomberos**, **Agentes Forestales**, brigadas forestales, **ERIVE** de protección civil, personal sanitario del **SUMMA 112**, grupos de protección civil, **policías locales** adheridas a la estrategia de seguridad autonómica y la **Dirección General de Carreteras**. La red permite además la **geolocalización de cada terminal**, cuya posición se envía al centro de control del servicio correspondiente. Los datos económicos recientes: casi **40 millones de euros a cinco años** para su modernización y gestión (agosto de 2025) y **6,1 millones** en el ejercicio 2025, con **2.263 terminales nuevos** repartidos entre Bomberos (1.600), Agentes Forestales (412), Protección Civil (140), Carreteras (66) y Madrid 112 (45) `[CM-TETRA]`.
 
 **Y un dato de 2026 que vale por toda una argumentación.** En **mayo de 2026**, la Comunidad de Madrid dotó de un terminal TETRA a **53 municipios pequeños** que no lo tenían, para garantizar su contacto con el 112. El motivo declarado es el análisis del **apagón del 28 de abril de 2025**: el estudio posterior constató que **las redes TETRA mantuvieron su operatividad durante el corte de suministro**, porque los repetidores cuentan con **baterías de respaldo**, mientras la telefonía convencional y el acceso a internet se degradaron `[CM-TETRA]`.
 
-> **[DATO CLAVE EXAMEN]** El **apagón peninsular del 28 de abril de 2025** es el argumento empírico más potente a favor de una red de radio propia, y por su actualidad es candidato natural a pregunta de caso práctico: **la red TETRA siguió funcionando cuando la telefonía comercial no**, gracias al **respaldo energético de los emplazamientos**. La lección de fondo no es sobre radio, sino sobre **dependencias**: un servicio crítico solo es resiliente si lo son **todas** sus dependencias, empezando por la energía.
+> **[DATO CLAVE]** El **apagón peninsular del 28 de abril de 2025** es el argumento empírico más potente a favor de una red de radio propia: **la red TETRA siguió funcionando cuando la telefonía comercial no**, gracias al **respaldo energético de los emplazamientos**. La lección de fondo no es sobre radio, sino sobre **dependencias**: un servicio crítico solo es resiliente si lo son **todas** sus dependencias, empezando por la energía.
 
-> **[EJEMPLO AYTO MADRID]** La red municipal, sobre plataforma **DIMETRA-TETRA**, da servicio a **Policía Municipal, Bomberos, SAMUR-Protección Civil, Agentes de Movilidad, SAMUR Social y Parques y Jardines**, coordinando a **más de 3.000 efectivos**, y su mantenimiento integral y evolución tecnológica se adjudicaron en **marzo de 2026** por **cinco años**, con **disponibilidad 24×7** `[TELEFONICA-2026]`. En **julio de 2026**, la Junta de Gobierno aprobó además el contrato de **operación, gestión, supervisión y mantenimiento de las infraestructuras, equipos y redes de radiocomunicaciones** de la Dirección General de Policía Municipal, con **933.000 euros** de presupuesto plurianual y **tres años** de duración prorrogables `[AYTO-CONTR]`. Obsérvese que son **dos contratos distintos**: uno sobre **la plataforma** y otro sobre **la operación y las redes de un cuerpo concreto**. Distinguir el objeto de cada uno es exactamente el tipo de precisión que se pide en un caso práctico.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** La red municipal, sobre plataforma **DIMETRA-TETRA**, da servicio a **Policía Municipal, Bomberos, SAMUR-Protección Civil, Agentes de Movilidad, SAMUR Social y Parques y Jardines**, coordinando a **más de 3.000 efectivos**, y su mantenimiento integral y evolución tecnológica se adjudicaron en **marzo de 2026** por **cinco años**, con **disponibilidad 24×7** `[TELEFONICA-2026]`. En **julio de 2026**, la Junta de Gobierno aprobó además el contrato de **operación, gestión, supervisión y mantenimiento de las infraestructuras, equipos y redes de radiocomunicaciones** de la Dirección General de Policía Municipal, con **933.000 euros** de presupuesto plurianual y **tres años** de duración prorrogables `[AYTO-CONTR]`. Obsérvese que son **dos contratos distintos**: uno sobre **la plataforma** y otro sobre **la operación y las redes de un cuerpo concreto**. Distinguir el objeto de cada uno es exactamente el tipo de precisión que se pide en un caso práctico.
 
 **Otros usos de TETRA que conviene citar.** Fuera de la seguridad pública, TETRA se emplea en **transporte** (metros, ferrocarriles, aeropuertos, puertos, flotas de autobuses), **energía y agua** (redes de distribución, telemando), **industria** (minería, petroquímica), **grandes recintos** y **defensa**. El caso más visible en Madrid es el **Metro**, con despliegues de TETRA por tramos para comunicar el Puesto de Mando con estaciones y trenes `[METRO]`.
 
-> **[REFERENCIA CRUZADA]** El encuadre de estas redes como **infraestructura crítica** —con las obligaciones de la **Ley 8/2011** y de la futura transposición de **NIS2**— enlaza con el **Tema 32** (seguridad de los sistemas de información) y con el **Tema 39** (ENS). La coordinación entre administraciones en emergencias es materia de la **Ley 17/2015** del Sistema Nacional de Protección Civil.
+> **[RELACIÓN CON OTROS TEMAS]** El encuadre de estas redes como **infraestructura crítica** —con las obligaciones de la **Ley 8/2011** y de la futura transposición de **NIS2**— enlaza con el **Tema 32** (seguridad de los sistemas de información) y con el **Tema 39** (ENS). La coordinación entre administraciones en emergencias es materia de la **Ley 17/2015** del Sistema Nacional de Protección Civil.
 
 ### 5.2. Marco normativo y regulación del espectro radioeléctrico
 
-**El punto de partida: el espectro es dominio público.** El art. **85.1** de la Ley 11/2022 lo dice sin matices: «**El espectro radioeléctrico es un bien de dominio público, cuya titularidad y administración corresponden al Estado**» `[LGTel]`. De ahí se deducen las tres consecuencias que se preguntan: **(1)** nadie es propietario de una frecuencia; **(2)** su uso requiere **título habilitante** estatal; y **(3)** ese título está **sujeto a condiciones**, tiene **plazo** y puede **modificarse o revocarse**.
+**El punto de partida: el espectro es dominio público.** El art. **85.1** de la Ley 11/2022 lo dice sin matices: «**El espectro radioeléctrico es un bien de dominio público, cuya titularidad y administración corresponden al Estado**» `[LGTel]`. De ahí se deducen tres consecuencias: **(1)** nadie es propietario de una frecuencia; **(2)** su uso requiere **título habilitante** estatal; y **(3)** ese título está **sujeto a condiciones**, tiene **plazo** y puede **modificarse o revocarse**.
 
 **La pirámide normativa del espectro, de arriba abajo:**
 
@@ -902,7 +902,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 
 **Las cuatro formas de título habilitante, art. 88.3:** **autorización general**, **autorización individual**, **afectación** y **concesión** administrativas. Y ahora el precepto que hay que saber literalmente:
 
-> **[DATO CLAVE EXAMEN]** **Art. 88.5.b) de la Ley 11/2022**: el derecho de uso **privativo para autoprestación** se otorga mediante **autorización individual**, «**salvo en el caso de Administraciones públicas, que requerirán de afectación demanial**» `[LGTel]`. Es decir: **la red TETRA de un ayuntamiento se ampara en una AFECTACIÓN DEMANIAL, no en una concesión ni en una autorización individual**. Y una **concesión administrativa** exige además, según el art. 88.6, que el solicitante **ostente la condición de operador de comunicaciones electrónicas**, que no es el caso de un ayuntamiento que se autopresta el servicio. Éste es el dato jurídico más específico del tema y el que distingue una respuesta buena de una excelente.
+> **[DATO CLAVE]** **Art. 88.5.b) de la Ley 11/2022**: el derecho de uso **privativo para autoprestación** se otorga mediante **autorización individual**, «**salvo en el caso de Administraciones públicas, que requerirán de afectación demanial**» `[LGTel]`. Es decir: **la red TETRA de un ayuntamiento se ampara en una AFECTACIÓN DEMANIAL, no en una concesión ni en una autorización individual**. Y una **concesión administrativa** exige además, según el art. 88.6, que el solicitante **ostente la condición de operador de comunicaciones electrónicas**, que no es el caso de un ayuntamiento que se autopresta el servicio. Éste es el dato jurídico más específico del tema y el que distingue una respuesta buena de una excelente.
 
 **La duración.** El art. **94.1** fija que los derechos de uso privativo **sin limitación de número** se otorgan «por un período que finalizará el **31 de diciembre del año natural en que cumplan su quinto año de vigencia**», **renovables por períodos de cinco años** en función de las disponibilidades y de la planificación `[LGTel]`. Es decir: **cinco años, con renovación periódica**, no indefinido.
 
@@ -910,7 +910,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 
 **Y la calificación jurídica del servicio.** El art. **4.1** de la Ley 11/2022 contiene una declaración con mucho recorrido: «**Sólo tienen la consideración de servicio público los servicios regulados en este artículo**», y el artículo se titula precisamente «**Servicios de telecomunicaciones para la seguridad nacional, la defensa nacional, la seguridad pública, la seguridad vial y la protección civil**» `[LGTel]`. Es decir: en un ordenamiento que declara las telecomunicaciones **servicios de interés general prestados en libre competencia**, las comunicaciones para **seguridad pública y protección civil** son la **excepción** expresamente calificada como servicio público.
 
-> **[DATO CLAVE EXAMEN]** **Art. 4.1 de la Ley 11/2022**: los servicios de telecomunicaciones para la **seguridad nacional, la defensa, la seguridad pública, la seguridad vial y la protección civil** son **los únicos** que tienen la consideración de **servicio público**. Es el fundamento jurídico de fondo de todo este tema y encaja con el art. **2**, que declara al resto de las telecomunicaciones servicios **de interés general en régimen de libre competencia**.
+> **[DATO CLAVE]** **Art. 4.1 de la Ley 11/2022**: los servicios de telecomunicaciones para la **seguridad nacional, la defensa, la seguridad pública, la seguridad vial y la protección civil** son **los únicos** que tienen la consideración de **servicio público**. Es el fundamento jurídico de fondo de todo este tema y encaja con el art. **2**, que declara al resto de las telecomunicaciones servicios **de interés general en régimen de libre competencia**.
 
 > **[EJERCICIO RESUELTO]** **Determinar el régimen jurídico completo de la red TETRA de un ayuntamiento.**
 >
@@ -938,7 +938,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 - **`op.cont.1` a `op.cont.4` — Continuidad del servicio**: análisis de impacto, plan de continuidad, pruebas periódicas y **medios alternativos**.
 - **`mp.si.2` — Criptografía** y **`op.exp.10` — Protección de claves criptográficas**.
 
-> **[DATO CLAVE EXAMEN]** **`mp.com.4.2` del ENS: «si se emplean comunicaciones inalámbricas, será en un segmento separado»** `[ENS]`. Es el precepto que se cita cuando alguien propone conectar la consola de despacho a la red ofimática general o dar salida a internet desde el segmento de la red radio. Y **`mp.if.4`, energía eléctrica**, es el que respalda exigir baterías y grupos electrógenos en los emplazamientos: aplica **ya en categoría BÁSICA**, con refuerzo **R1** en MEDIA y ALTA.
+> **[DATO CLAVE]** **`mp.com.4.2` del ENS: «si se emplean comunicaciones inalámbricas, será en un segmento separado»** `[ENS]`. Es el precepto que se cita cuando alguien propone conectar la consola de despacho a la red ofimática general o dar salida a internet desde el segmento de la red radio. Y **`mp.if.4`, energía eléctrica**, es el que respalda exigir baterías y grupos electrógenos en los emplazamientos: aplica **ya en categoría BÁSICA**, con refuerzo **R1** en MEDIA y ALTA.
 
 ### 5.3. Requisitos de disponibilidad, resiliencia y calidad de servicio (QoS)
 
@@ -962,7 +962,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 
 **6. Procedimientos y personas.** Plan de continuidad probado, guardia 24×7, repuestos, y **ejercicios periódicos**. El ENS lo exige en **`op.cont.2`** (plan de continuidad), **`op.cont.3`** (**pruebas periódicas**) y **`op.cont.4`** (medios alternativos) `[ENS]`.
 
-> **[DATO CLAVE EXAMEN]** Los **tres modos degradados** de TETRA, ordenados de menos a más severo: **repliegue local de la estación base** (pierde el núcleo, conserva la troncalización en su célula) → **modo directo** (pierde toda la red, conserva la comunicación terminal a terminal) → **repliegue de clase de seguridad SC3 → SC2** (pierde la autenticación, conserva el cifrado con clave estática). Que un sistema **degrade en escalones** en lugar de caer de golpe es el rasgo de diseño que define a las comunicaciones críticas.
+> **[DATO CLAVE]** Los **tres modos degradados** de TETRA, ordenados de menos a más severo: **repliegue local de la estación base** (pierde el núcleo, conserva la troncalización en su célula) → **modo directo** (pierde toda la red, conserva la comunicación terminal a terminal) → **repliegue de clase de seguridad SC3 → SC2** (pierde la autenticación, conserva el cifrado con clave estática). Que un sistema **degrade en escalones** en lugar de caer de golpe es el rasgo de diseño que define a las comunicaciones críticas.
 
 **La calidad de servicio operativa.** Además de la disponibilidad, hay parámetros que se miden y se contratan:
 
@@ -975,9 +975,9 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 | **Retardo de extremo a extremo** | Acotado, para que el diálogo sea natural |
 | **Disponibilidad del servicio** | **≥ 99,99 %**, con penalizaciones contractuales |
 
-> **[EJEMPLO AYTO MADRID]** El contrato municipal de 2026 refleja exactamente este lenguaje: **disponibilidad 24×7** de la infraestructura crítica y **tiempos de respuesta casi inmediatos ante incidencias técnicas** `[TELEFONICA-2026]`. Traducido a la práctica, eso significa guardia permanente, repuestos en almacén, procedimientos escritos y compromisos medibles. Y explica por qué el mantenimiento de una red de radio de emergencia se contrata como **servicio con niveles de servicio**, y no como una simple asistencia técnica.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El contrato municipal de 2026 refleja exactamente este lenguaje: **disponibilidad 24×7** de la infraestructura crítica y **tiempos de respuesta casi inmediatos ante incidencias técnicas** `[TELEFONICA-2026]`. Traducido a la práctica, eso significa guardia permanente, repuestos en almacén, procedimientos escritos y compromisos medibles. Y explica por qué el mantenimiento de una red de radio de emergencia se contrata como **servicio con niveles de servicio**, y no como una simple asistencia técnica.
 
-> **[REFERENCIA CRUZADA]** Los conceptos de **plan de continuidad**, **análisis de impacto en el negocio**, **RTO y RPO** y **medios alternativos** se desarrollan en el **Tema 26**; su exigencia normativa, en el **Tema 39**. La **gestión de incidencias** y los acuerdos de nivel de servicio, en el **Tema 29**.
+> **[RELACIÓN CON OTROS TEMAS]** Los conceptos de **plan de continuidad**, **análisis de impacto en el negocio**, **RTO y RPO** y **medios alternativos** se desarrollan en el **Tema 26**; su exigencia normativa, en el **Tema 39**. La **gestión de incidencias** y los acuerdos de nivel de servicio, en el **Tema 29**.
 
 ### 5.4. Evolución hacia TEDS y coexistencia con redes de banda ancha crítica
 
@@ -992,7 +992,7 @@ El TEA set B trabaja con **claves extendidas** —SCKX, DCKX, CCKX, GCKX— y co
 
 El resultado es un salto de **uno o dos órdenes de magnitud** en la capacidad de datos —del orden de decenas a **algunos centenares de kbit/s** de caudal útil, según ancho de canal, modulación y condiciones de propagación—, manteniendo la misma red, los mismos grupos y la misma voz crítica.
 
-> **[DATO CLAVE EXAMEN]** **TEDS = TETRA Release 2**, con **cuatro anchos de canal (25, 50, 100 y 150 kHz)** y **modulaciones π/8-D8PSK, 4-QAM, 16-QAM y 64-QAM** con **adaptación al enlace**. Es una **mejora dentro de TETRA**, no una tecnología distinta: sigue siendo banda estrecha en el sentido regulatorio, y **no compite con LTE**. Su adopción real ha sido limitada, entre otras razones porque exige **más espectro por canal** —y el espectro de 380-400 MHz está saturado en entornos urbanos, como reconoce la propia nota UN-28 del CNAF— y porque, cuando TEDS llegó al mercado, la banda ancha comercial ya ofrecía mucho más.
+> **[DATO CLAVE]** **TEDS = TETRA Release 2**, con **cuatro anchos de canal (25, 50, 100 y 150 kHz)** y **modulaciones π/8-D8PSK, 4-QAM, 16-QAM y 64-QAM** con **adaptación al enlace**. Es una **mejora dentro de TETRA**, no una tecnología distinta: sigue siendo banda estrecha en el sentido regulatorio, y **no compite con LTE**. Su adopción real ha sido limitada, entre otras razones porque exige **más espectro por canal** —y el espectro de 380-400 MHz está saturado en entornos urbanos, como reconoce la propia nota UN-28 del CNAF— y porque, cuando TEDS llegó al mercado, la banda ancha comercial ya ofrecía mucho más.
 
 **Camino 2: la banda ancha crítica, fuera de TETRA.** La solución de fondo es llevar las funciones de misión crítica a redes de **banda ancha** LTE y 5G. El **3GPP** las normalizó:
 
@@ -1004,9 +1004,9 @@ El resultado es un salto de **uno o dos órdenes de magnitud** en la capacidad d
 
 Y se apoya en tres habilitadores previos del propio 3GPP: **GCSE** (comunicaciones de grupo), **eMBMS** (difusión eficiente a muchos receptores sobre la misma portadora, imprescindible para que una llamada de grupo no consuma un canal por usuario) y **ProSe** (comunicación de proximidad, el equivalente conceptual del **modo directo**).
 
-> **[DATO CLAVE EXAMEN]** **MCPTT se normalizó en la Release 13 del 3GPP, culminada en 2016**, con la **TS 22.179** como especificación de requisitos. **MCVideo y MCData** llegaron en la **Release 14**. El habilitador que hace viable la llamada de grupo sobre LTE es **eMBMS**; el que aspira a replicar el modo directo es **ProSe**.
+> **[DATO CLAVE]** **MCPTT se normalizó en la Release 13 del 3GPP, culminada en 2016**, con la **TS 22.179** como especificación de requisitos. **MCVideo y MCData** llegaron en la **Release 14**. El habilitador que hace viable la llamada de grupo sobre LTE es **eMBMS**; el que aspira a replicar el modo directo es **ProSe**.
 
-**Por qué la transición es lenta, y esto es lo que se pregunta en un caso práctico.** Las razones son cuatro y conviene saberlas defender:
+**Por qué la transición es lenta.** Las razones son cuatro y conviene saberlas defender:
 
 1. **Cobertura y control.** Una red TETRA municipal está dimensionada por su titular para cubrir el 100 % del término municipal, incluidos interiores y subsuelo. Replicar esa cobertura con LTE **propio** es carísimo; usar LTE **comercial** significa renunciar al control de la disponibilidad y de la prioridad.
 2. **El modo directo.** **ProSe no ha alcanzado en la práctica la madurez del DMO de TETRA**, y el modo directo es innegociable para bomberos y equipos de rescate.
@@ -1015,11 +1015,11 @@ Y se apoya en tres habilitadores previos del propio 3GPP: **GCSE** (comunicacion
 
 **El modelo que se impone: la coexistencia.** La respuesta práctica del sector no es sustituir, sino **operar dos redes complementarias**: **TETRA para la voz crítica y los datos cortos garantizados**, y **banda ancha (LTE/5G, propia o comercial con prioridad contratada) para todo lo que necesita caudal**, con **terminales híbridos** que integran ambas y con **interconexión entre el mundo MCPTT y el mundo TETRA** en los centros de mando. La migración se plantea **por fases y por servicios**, no de golpe.
 
-> **[EJEMPLO AYTO MADRID]** El caso español ilustra bien este modelo. El **SIRDEE**, en servicio desde el año 2000 sobre TETRAPOL, inició en **julio de 2024** un proyecto piloto de **migración a banda ancha LTE** de la mano de Telefónica, **manteniendo la red de banda estrecha durante la transición** y usando la red pública como cobertura de respaldo donde no llega la red dedicada `[SIRDEE]`. En paralelo, el CNAF ya tiene **reservado el espectro** para ese futuro: **452-457,5 / 462-467,5 MHz** para PPDR de banda ancha y, en la banda de 700 MHz, **733-736 / 788-791 MHz** para el sistema de **ámbito nacional** y **698-703 / 753-758 MHz** para las redes de **ámbito autonómico y local** `[CNAF]`. Ese último bloque es, literalmente, **el espectro que la norma española reserva para una eventual red de banda ancha crítica de la Comunidad de Madrid o del Ayuntamiento**. Que exista la reserva no significa que exista la red: significa que **la decisión está pendiente y el recurso, apartado**.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El caso español ilustra bien este modelo. El **SIRDEE**, en servicio desde el año 2000 sobre TETRAPOL, inició en **julio de 2024** un proyecto piloto de **migración a banda ancha LTE** de la mano de Telefónica, **manteniendo la red de banda estrecha durante la transición** y usando la red pública como cobertura de respaldo donde no llega la red dedicada `[SIRDEE]`. En paralelo, el CNAF ya tiene **reservado el espectro** para ese futuro: **452-457,5 / 462-467,5 MHz** para PPDR de banda ancha y, en la banda de 700 MHz, **733-736 / 788-791 MHz** para el sistema de **ámbito nacional** y **698-703 / 753-758 MHz** para las redes de **ámbito autonómico y local** `[CNAF]`. Ese último bloque es, literalmente, **el espectro que la norma española reserva para una eventual red de banda ancha crítica de la Comunidad de Madrid o del Ayuntamiento**. Que exista la reserva no significa que exista la red: significa que **la decisión está pendiente y el recurso, apartado**.
 
-> **[DATO CLAVE EXAMEN]** El reparto de espectro PPDR de banda ancha del CNAF: **733-736 / 788-791 MHz → ámbito NACIONAL**; **698-703 / 753-758 MHz → ámbito AUTONÓMICO y LOCAL**; y **452-457,5 / 462-467,5 MHz**, «preferentemente para el sistema de ámbito nacional» `[CNAF]`. Una pregunta que cruce «banda ancha PPDR» con «ámbito local» se responde con el segundo par.
+> **[DATO CLAVE]** El reparto de espectro PPDR de banda ancha del CNAF: **733-736 / 788-791 MHz → ámbito NACIONAL**; **698-703 / 753-758 MHz → ámbito AUTONÓMICO y LOCAL**; y **452-457,5 / 462-467,5 MHz**, «preferentemente para el sistema de ámbito nacional» `[CNAF]`. Un supuesto que cruce «banda ancha PPDR» con «ámbito local» se resuelve con el segundo par.
 
-> **[REFERENCIA CRUZADA]** La arquitectura de las redes móviles de banda ancha (LTE, 5G) es materia del **Tema 33**; el transporte IP sobre ellas, del **Tema 34**; los servicios de vídeo y colaboración que justifican el salto de capacidad, del **Tema 40**; y la seguridad del acceso remoto que exigirán las aplicaciones móviles de misión crítica, del **Tema 36**.
+> **[RELACIÓN CON OTROS TEMAS]** La arquitectura de las redes móviles de banda ancha (LTE, 5G) es materia del **Tema 33**; el transporte IP sobre ellas, del **Tema 34**; los servicios de vídeo y colaboración que justifican el salto de capacidad, del **Tema 40**; y la seguridad del acceso remoto que exigirán las aplicaciones móviles de misión crítica, del **Tema 36**.
 
 ---
 

@@ -35,10 +35,10 @@ def inline(t):
 
 
 CALLOUTS = {
-    "DATO CLAVE EXAMEN": "dato",
+    "DATO CLAVE": "dato",
     "EJERCICIO RESUELTO": "ejercicio",
-    "EJEMPLO AYTO MADRID": "ayto",
-    "REFERENCIA CRUZADA": "ref",
+    "EJEMPLO DE APLICACIÓN EN EL AYTO": "ayto",
+    "RELACIÓN CON OTROS TEMAS": "ref",
 }
 
 
@@ -345,7 +345,7 @@ def build():
 <tr><td>Casos prácticos Ayto Madrid</td><td>3 casos (incidente en un aparcamiento subterráneo, con elección de modo y despliegue de pasarela; informe de seguridad sobre una oferta de 1.200 terminales; renovación del título habilitante y decisión de evolución)</td></tr>
 <tr><td>Fuentes</td><td>29 Tier 1 (CNAF 2026, Ley 11/2022, ENS, normas ETSI de las series EN 300 392, 396, 394 y 395, decisiones CEPT/ECC y 3GPP), 12 Tier 2 y 3 Tier 3</td></tr>
 </tbody></table>
-<div class="callout ref"><span class="kicker">Cómo estudiar</span>Éste es el <strong>único tema de los cuarenta dedicado a un solo sistema con nombre propio</strong>, y eso cambia la forma de estudiarlo: el examen puede bajar al <strong>detalle numérico</strong> sin remordimiento. Es un tema <strong>de datos exactos</strong>. El orden que funciona es: <strong>§1</strong> para entender qué es el <em>trunking</em> y por qué existe; <strong>§3</strong> —aunque vaya después— para fijar la cadena de cifras de la capa física, que es lo más rentable en puntos por palabra; <strong>§2</strong> para la arquitectura, con la distinción entre <strong>DM-REP</strong> y <strong>DM-GATE</strong>, que es donde más se falla; <strong>§4</strong> para servicios y seguridad; y <strong>§5</strong> para el espectro y el régimen jurídico, que es lo que distingue una respuesta buena de una excelente en un caso práctico. Los <strong>Diagramas</strong> más rentables son <strong>D9</strong> (las bandas del CNAF, con las notas UN literales), <strong>D10</strong> (25 kHz → 18 kbaudios → 36 kbit/s → 7,2 kbit/s), <strong>D12</strong> (intervalo, trama, multitrama e hipertrama) y <strong>D16</strong> (autenticación, claves y clases de seguridad). Y antes de nada, lee la advertencia que abre el Contenido: <strong>el SIRDEE del Estado no es TETRA, sino TETRAPOL</strong>. Termina siempre por el bloque final, <strong>«los ocho datos que no se pueden fallar»</strong>.</div>"""
+<div class="callout ref"><span class="kicker">Cómo estudiar</span>Éste es el <strong>único tema de los cuarenta dedicado a un solo sistema con nombre propio</strong>, y eso cambia la forma de estudiarlo: exige retener el <strong>detalle numérico</strong>. Es un tema <strong>de datos exactos</strong>. El orden que funciona es: <strong>§1</strong> para entender qué es el <em>trunking</em> y por qué existe; <strong>§3</strong> —aunque vaya después— para fijar la cadena de cifras de la capa física, que es lo más rentable en puntos por palabra; <strong>§2</strong> para la arquitectura, con la distinción entre <strong>DM-REP</strong> y <strong>DM-GATE</strong>, que es donde más se falla; <strong>§4</strong> para servicios y seguridad; y <strong>§5</strong> para el espectro y el régimen jurídico, que es lo que distingue una respuesta buena de una excelente en un caso práctico. Los <strong>Diagramas</strong> más rentables son <strong>D9</strong> (las bandas del CNAF, con las notas UN literales), <strong>D10</strong> (25 kHz → 18 kbaudios → 36 kbit/s → 7,2 kbit/s), <strong>D12</strong> (intervalo, trama, multitrama e hipertrama) y <strong>D16</strong> (autenticación, claves y clases de seguridad). Y antes de nada, lee la advertencia que abre el Contenido: <strong>el SIRDEE del Estado no es TETRA, sino TETRAPOL</strong>. Termina siempre por el bloque final, <strong>«los ocho datos que no se pueden fallar»</strong>.</div>"""
 
     nav = (
         '<nav class="tabs">'

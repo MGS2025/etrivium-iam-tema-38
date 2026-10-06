@@ -1029,7 +1029,7 @@ C) 410-415,3 y 420-425,3 MHz, con canalización de 25 kHz
 
 **Correcta: C) 410-415,3 y 420-425,3 MHz, con canalización de 25 kHz**
 
-Es la nota UN-31, dentro de la subbanda 410-430 MHz reservada a banda estrecha en modalidad dúplex con separación de 10 MHz entre transmisión y recepción. Es la única mención expresa de TETRA en el CNAF español, y por eso es un dato de examen de primer orden.
+Es la nota UN-31, dentro de la subbanda 410-430 MHz reservada a banda estrecha en modalidad dúplex con separación de 10 MHz entre transmisión y recepción. Es la única mención expresa de TETRA en el CNAF español.
 
 *Referencia: §3.1 [CNAF]*
 

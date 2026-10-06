@@ -92,7 +92,7 @@
 
 | Referencia | Motivo |
 |---|---|
-| Manuales de usuario y catálogos de fabricante (Motorola, Sepura, Airbus, Hytera, Teltronic) | Describen **implementaciones concretas**, no el estándar. Se han usado solo para contrastar que las funciones descritas existen en producto, nunca como fuente de un dato de examen. |
+| Manuales de usuario y catálogos de fabricante (Motorola, Sepura, Airbus, Hytera, Teltronic) | Describen **implementaciones concretas**, no el estándar. Se han usado solo para contrastar que las funciones descritas existen en producto, nunca como fuente de un dato del tema. |
 | Enciclopedias colaborativas y blogs técnicos | Útiles para localizar la norma que contiene cada dato, pero **todo número que aparece en el tema se ha confirmado después en el documento de origen** (norma ETSI, informe de la TCCA, BOE o nota oficial). |
 | Foros de radioafición y sitios de identificación de señales | Descartados como fuente citable. |
 | Informes de mercado de pago | Solo se recoge de ellos, y marcado como ilustrativo, el hecho de que TETRA sigue creciendo mientras convive con la banda ancha crítica. |

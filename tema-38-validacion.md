@@ -9,7 +9,7 @@
 
 ## 1. Cobertura del temario oficial
 
-El enunciado oficial (BOAM 10.032, tema 38) es el **único de los cuarenta que se dedica a un solo sistema con nombre propio**, y por tanto no enumera materias. El esqueleto de partida (`Test_Prompting/temas agosto/38.md`) sí lo hace, y se ha seguido **literalmente**:
+El enunciado oficial (BOAM 10.032, tema 38) es el **único de los cuarenta que se dedica a un solo sistema con nombre propio**, y por tanto no enumera materias. El esqueleto de partida sí lo hace, y se ha seguido **literalmente**:
 
 | Bloque del esqueleto | Sección | Estado |
 |---|---|---|
@@ -25,11 +25,11 @@ El enunciado oficial (BOAM 10.032, tema 38) es el **único de los cuarenta que s
 
 - **5 secciones · 17 subsecciones · 16 epígrafes numerados** (numeración de tres niveles, coherente con el resto de la serie técnica).
 - **≈ 22.800 palabras** medidas con `wc -w`. Es el **cuarto tema más extenso de la serie**, por detrás de T32 (≈25.000), T33 (≈24.500) y T37 (≈23.000), y por delante de T34 (≈21.500), T30 (≈21.400) y T29 (≈21.200).
-- **4 tipos de callout**: `[DATO CLAVE EXAMEN]` (50), `[EJERCICIO RESUELTO]` (6), `[EJEMPLO AYTO MADRID]` (14) y `[REFERENCIA CRUZADA]` (13).
+- **4 tipos de callout**: `[DATO CLAVE]` (50), `[EJERCICIO RESUELTO]` (6), `[EJEMPLO DE APLICACIÓN EN EL AYTO]` (14) y `[RELACIÓN CON OTROS TEMAS]` (13).
 - **Caso de referencia transversal**: la **red DIMETRA-TETRA municipal** gobernada desde el **CISEM**, que atraviesa las cinco secciones y enlaza con los tres casos prácticos.
 - **Sin fragmentos de código**, como en T26, T28, T29, T30, T31, T32, T33, T34 y T35. Decisión deliberada y evidente en este tema: el enunciado no menciona ningún lenguaje y lo memorizable son **cifras de la capa física, bandas de frecuencia, siglas, números de norma y preceptos legales**, concentrados en tablas y en los diagramas D9, D10, D12 y D16.
 - Cierre con un bloque de **«los ocho datos que no se pueden fallar»**, no numerado, a modo de resumen memorístico.
-- **Dos advertencias abren el tema**, por decisión editorial: (a) que este es un tema **de datos exactos**, porque al versar sobre un sistema concreto el examen puede bajar al detalle numérico; y (b) que **el SIRDEE no es TETRA sino TETRAPOL**, que es la confusión más penalizada de la materia.
+- **Dos advertencias abren el tema**, por decisión editorial: (a) que este es un tema **de datos exactos**, porque al versar sobre un sistema concreto exige retener el detalle numérico; y (b) que **el SIRDEE no es TETRA sino TETRAPOL**, que es la confusión más penalizada de la materia.
 
 ## 3. Fuentes
 
@@ -100,7 +100,7 @@ Se citan **14 temas** del temario oficial, todos validados contra el enunciado d
 
 **8.1. Hallazgo normativo que conviene comunicar de inmediato: el CNAF de referencia ha cambiado.** Al verificar las bandas contra el BOE se detectó que la **Orden ETD/1449/2021** —el CNAF que citan todos los temarios en circulación— fue **derogada con efectos de 18 de julio de 2026** por la **Orden TDF/732/2026, de 10 de julio** (BOE núm. 173, de 17 de julio de 2026, 349 páginas), que incorpora la **CMR-2023**. El tema cita ya la orden vigente. **Debe revisarse si otros temas de la serie citan el CNAF derogado** —el T33 es el candidato más probable— y, en su caso, corregirlos.
 
-**8.2. Profundidad del bloque de seguridad (§4.3).** Se ha desarrollado con detalle porque el enunciado del esqueleto dedica tres epígrafes de tercer nivel a la seguridad y porque las divulgaciones de 2023 y 2025 son material de actualidad con alta probabilidad de aparecer. **A validar**: si el nivel de detalle de los identificadores CVE es el adecuado para un C1 o si conviene dejarlos como contexto y memorizar solo el fenómeno (TEA1 debilitado, protocolo sin autenticación de mensajes).
+**8.2. Profundidad del bloque de seguridad (§4.3).** Se ha desarrollado con detalle porque el enunciado del esqueleto dedica tres epígrafes de tercer nivel a la seguridad y porque las divulgaciones de 2023 y 2025 son material de actualidad. **A validar**: si el nivel de detalle de los identificadores CVE es el adecuado para un C1 o si conviene dejarlos como contexto y memorizar solo el fenómeno (TEA1 debilitado, protocolo sin autenticación de mensajes).
 
 **8.3. Frontera con el Tema 33.** El T33 cubre «comunicaciones móviles e inalámbricas» en general. Aquí se ha dado por sabida esa panorámica y se ha entrado directamente en el sistema. **A validar** que ese reparto es el que el IAM espera, y en particular quién explica los conceptos de FDMA, TDMA y CDMA: aquí se explican **solo en lo que TETRA los usa**.
 
