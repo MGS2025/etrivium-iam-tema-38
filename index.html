@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tema 38 v1.3 — ETRIVIUM IAM</title>
+<title>Tema 38 v1.4 — ETRIVIUM IAM</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--azul:#0055a0;--azul-dark:#003d73;--azul-deep:#002a52;--azul-light:#e8f0f8;--azul-05:rgba(0,85,160,.05);--azul-10:rgba(0,85,160,.10);--verde:#2d8659;--verde-bg:#e8f5ee;--rojo:#d13c3c;--rojo-bg:#fbeeed;--amber:#e89822;--amber-bg:#fdf4e4;--g100:#f5f7fa;--g200:#e8ecf0;--g300:#d1d7df;--g600:#4a5568;--g800:#2d3748;--font:'DM Sans',-apple-system,system-ui,sans-serif;--rad:8px;--sh:0 1px 3px rgba(0,0,0,.08);--shl:0 4px 16px rgba(0,0,0,.08)}
@@ -80,12 +80,12 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 </head>
 <body>
 <div class="wrap">
-<nav class="tabs"><button class="tab-btn active" data-tab="inicio">Inicio <span class='version-badge'>v1.3</span></button><button class="tab-btn" data-tab="contenido">Contenido</button><button class="tab-btn" data-tab="indice">Índice</button><button class="tab-btn" data-tab="diagramas">Diagramas</button><button class="tab-btn" data-tab="test">Test</button><button class="tab-btn" data-tab="casos">Casos</button><button class="tab-btn" data-tab="validacion">Validación</button><button class="tab-btn" data-tab="fuentes">Fuentes</button></nav>
+<nav class="tabs"><button class="tab-btn active" data-tab="inicio">Inicio <span class='version-badge'>v1.4</span></button><button class="tab-btn" data-tab="contenido">Contenido</button><button class="tab-btn" data-tab="indice">Índice</button><button class="tab-btn" data-tab="diagramas">Diagramas</button><button class="tab-btn" data-tab="test">Test</button><button class="tab-btn" data-tab="casos">Casos</button><button class="tab-btn" data-tab="validacion">Validación</button><button class="tab-btn" data-tab="fuentes">Fuentes</button></nav>
 <section id="tab-inicio" class="tab-content active"><div class="hero">
-  <span class="vbadge">v1.3</span>
+  <span class="vbadge">v1.4</span>
   <h1>Tema 38 — El sistema de radiocomunicación TETRA</h1>
   <div class="sub">La radio móvil privada y el <em>trunking</em> · Estandarización del ETSI · Arquitectura: SwMI, terminales e interfaces · TMO, DMO, repetidor y pasarela · Capa física: FDMA + TDMA, π/4-DQPSK y estructura de trama · Servicios de voz y datos · Autenticación, cifrado de interfaz aire y extremo a extremo · Espectro, CNAF y régimen jurídico · TEDS y banda ancha crítica</div>
-  <div class="banner"><strong>Parte II — Técnico · C1 Ayuntamiento de Madrid</strong> · Piloto v1.3 · 2026-08-27 · Pendiente de validación</div>
+  <div class="banner"><strong>Parte II — Técnico · C1 Ayuntamiento de Madrid</strong> · Piloto v1.4 · 2026-08-27 · Pendiente de validación</div>
 </div><!-- ficha-estudio:ini --><div class="ficha-estudio"><div class="fe-item"><span class="fe-k">Extensi&oacute;n</span><span class="fe-v">~23.500 palabras &middot; 18 diagramas &middot; 60 preguntas de test</span></div><div class="fe-item"><span class="fe-k">Tiempo estimado de estudio</span><span class="fe-v">21-23 horas <span class="fe-n">(primera vuelta completa, sin contar repasos)</span></span></div></div><!-- ficha-estudio:fin -->
 <h2>Qué incluye este tema</h2>
 <table><thead><tr><th>Entregable</th><th>Cantidad</th></tr></thead><tbody>
@@ -1038,10 +1038,10 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 <hr>
 <h2>D13 · Canales lógicos: control y tráfico</h2>
 <p><strong>Sección</strong>: §3.4 — Estructura de trama radio y canales lógicos <strong>Propósito</strong>: Separar canal <strong>físico</strong> de canal <strong>lógico</strong> y ordenar las dos familias.</p>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 328" role="img" aria-label="Clasificación de los canales lógicos de TETRA. La familia de canales de control incluye el BCCH de difusión con sus variantes BNCH de red y BSCH de sincronización, el LCH de linealización, el SCH de señalización con sus variantes completa y de medio intervalo, el ACCH asociado a una llamada en curso con las variantes rápida y lenta, y el STCH que roba capacidad al tráfico. La familia de canales de tráfico incluye el TCH de voz a 7,2 kilobits por segundo y los de datos a 7,2 sin protección, 4,8 con protección baja y 2,4 con protección alta">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 334" role="img" aria-label="Clasificación de los canales lógicos de TETRA. La familia de canales de control incluye el BCCH de difusión con sus variantes BNCH de red y BSCH de sincronización, el LCH de linealización, el SCH de señalización con sus variantes completa y de medio intervalo, el ACCH asociado a una llamada en curso con las variantes rápida y lenta, y el STCH que roba capacidad al tráfico. La familia de canales de tráfico incluye el TCH de voz a 7,2 kilobits por segundo y los de datos a 7,2 sin protección, 4,8 con protección baja y 2,4 con protección alta">
   <style>.t13{font:700 10px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:8.5px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n13{font:8.5px system-ui,sans-serif;fill:#666}.b13{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
   <text x="340" y="22" text-anchor="middle" class="h13">Canal FÍSICO es un intervalo; canal LÓGICO es lo que se transporta en él</text>
-  <rect x="20" y="36" width="322" height="216" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
+  <rect x="20" y="36" width="322" height="222" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
   <rect x="32" y="46" width="298" height="24" rx="3" fill="#0055a0"/>
   <text x="181" y="62" text-anchor="middle" class="t13">CANALES DE CONTROL (CCH)</text>
   <rect x="32" y="78" width="298" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
@@ -1056,9 +1056,9 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="32" y="192" width="298" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
   <text x="44" y="206" class="b13">STCH · robo de capacidad</text>
   <text x="44" y="219" class="d13">Señalización urgente sobre el canal de tráfico</text>
-  <rect x="32" y="230" width="298" height="14" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
-  <text x="44" y="241" class="d13">LCH · linealización de los amplificadores</text>
-  <rect x="354" y="36" width="314" height="216" rx="5" fill="none" stroke="#2d8659" stroke-width="2"/>
+  <rect x="32" y="230" width="298" height="20" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
+  <text x="44" y="243" class="d13">LCH · linealización de los amplificadores</text>
+  <rect x="354" y="36" width="314" height="222" rx="5" fill="none" stroke="#2d8659" stroke-width="2"/>
   <rect x="366" y="46" width="290" height="24" rx="3" fill="#2d8659"/>
   <text x="511" y="62" text-anchor="middle" class="t13">CANALES DE TRÁFICO (TCH)</text>
   <rect x="366" y="78" width="290" height="38" rx="3" fill="#2d8659"/>
@@ -1073,11 +1073,11 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <rect x="366" y="198" width="290" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
   <text x="378" y="212" class="b13">TCH/2,4 · datos con protección alta</text>
   <text x="378" y="225" class="d13">Para el borde de la cobertura</text>
-  <text x="378" y="245" class="d13">Con los 4 intervalos agregados: hasta 28,8 kbit/s</text>
-  <rect x="20" y="262" width="648" height="38" rx="4" fill="#e89822"/>
-  <text x="36" y="278" class="t13">EL CANAL DE CONTROL PRINCIPAL (MCCH)</text>
-  <text x="36" y="293" class="s13">Es el canal lógico de control que la estación base mantiene permanentemente activo en el intervalo 1 de la portadora principal</text>
-  <text x="670" y="320" text-anchor="end" class="n13">[Fuente: elaboración propia sobre ETSI EN 300 392-2, capa MAC]</text>
+  <text x="378" y="246" class="d13">Con los 4 intervalos agregados: hasta 28,8 kbit/s</text>
+  <rect x="20" y="268" width="648" height="38" rx="4" fill="#e89822"/>
+  <text x="36" y="284" class="t13">EL CANAL DE CONTROL PRINCIPAL (MCCH)</text>
+  <text x="36" y="299" class="s13">Es el canal lógico de control que la estación base mantiene permanentemente activo en el intervalo 1 de la portadora principal</text>
+  <text x="670" y="326" text-anchor="end" class="n13">[Fuente: elaboración propia sobre ETSI EN 300 392-2, capa MAC]</text>
 </svg>
 <hr>
 <h2>D14 · Tipos de llamada y escalones de prioridad</h2>
@@ -1164,8 +1164,8 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
   <text x="608" y="74" text-anchor="middle" class="m15">SDS TIPO 4</text>
   <text x="608" y="91" text-anchor="middle" class="s15">hasta 2.047 bits</text>
   <text x="608" y="105" text-anchor="middle" class="s15">de usuario</text>
-  <rect x="20" y="124" width="648" height="34" rx="4" fill="#e89822"/>
-  <text x="36" y="140" class="t15">SDS-TL · capa de transporte sobre el tipo 4</text>
+  <rect x="20" y="124" width="648" height="36" rx="4" fill="#e89822"/>
+  <text x="36" y="139" class="t15">SDS-TL · capa de transporte sobre el tipo 4</text>
   <text x="36" y="153" class="s15">Añade identificador de protocolo de aplicación, acuse de recibo y encadenamiento. Es la base del texto y del envío de posición (LIP)</text>
   <text x="20" y="182" class="k15">LOS DOS MODOS DE DATOS DE MAYOR VOLUMEN</text>
   <rect x="20" y="190" width="314" height="112" rx="5" fill="none" stroke="#d13c3c" stroke-width="2"/>
@@ -1463,7 +1463,7 @@ svg{max-width:100%;height:auto;display:block;margin:14px auto;background:#fff;bo
 <hr>
 <h2>Tier 4 — Consultadas y NO utilizadas como fuente de contenido</h2>
 <table><thead><tr><th>Referencia</th><th>Motivo</th></tr></thead><tbody><tr><td>Manuales de usuario y catálogos de fabricante (Motorola, Sepura, Airbus, Hytera, Teltronic)</td><td>Describen <strong>implementaciones concretas</strong>, no el estándar. Se han usado solo para contrastar que las funciones descritas existen en producto, nunca como fuente de un dato del tema.</td></tr><tr><td>Enciclopedias colaborativas y blogs técnicos</td><td>Útiles para localizar la norma que contiene cada dato, pero <strong>todo número que aparece en el tema se ha confirmado después en el documento de origen</strong> (norma ETSI, informe de la TCCA, BOE o nota oficial).</td></tr><tr><td>Foros de radioafición y sitios de identificación de señales</td><td>Descartados como fuente citable.</td></tr><tr><td>Informes de mercado de pago</td><td>Solo se recoge de ellos, y marcado como ilustrativo, el hecho de que TETRA sigue creciendo mientras convive con la banda ancha crítica.</td></tr></tbody></table></section>
-<div class="footer">Tema 38 · v1.3 · 2026-08-27 · ETRIVIUM — IAM Ayuntamiento de Madrid · Generado desde los .md (sincronizado)</div>
+<div class="footer">Tema 38 · v1.4 · 2026-08-27 · ETRIVIUM — IAM Ayuntamiento de Madrid · Generado desde los .md (sincronizado)</div>
 </div>
 <script>
 const questions = [

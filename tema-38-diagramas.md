@@ -690,10 +690,10 @@
 **Propósito**: Separar canal **físico** de canal **lógico** y ordenar las dos familias.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 328" role="img" aria-label="Clasificación de los canales lógicos de TETRA. La familia de canales de control incluye el BCCH de difusión con sus variantes BNCH de red y BSCH de sincronización, el LCH de linealización, el SCH de señalización con sus variantes completa y de medio intervalo, el ACCH asociado a una llamada en curso con las variantes rápida y lenta, y el STCH que roba capacidad al tráfico. La familia de canales de tráfico incluye el TCH de voz a 7,2 kilobits por segundo y los de datos a 7,2 sin protección, 4,8 con protección baja y 2,4 con protección alta">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 334" role="img" aria-label="Clasificación de los canales lógicos de TETRA. La familia de canales de control incluye el BCCH de difusión con sus variantes BNCH de red y BSCH de sincronización, el LCH de linealización, el SCH de señalización con sus variantes completa y de medio intervalo, el ACCH asociado a una llamada en curso con las variantes rápida y lenta, y el STCH que roba capacidad al tráfico. La familia de canales de tráfico incluye el TCH de voz a 7,2 kilobits por segundo y los de datos a 7,2 sin protección, 4,8 con protección baja y 2,4 con protección alta">
   <style>.t13{font:700 10px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:8.5px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n13{font:8.5px system-ui,sans-serif;fill:#666}.b13{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
   <text x="340" y="22" text-anchor="middle" class="h13">Canal FÍSICO es un intervalo; canal LÓGICO es lo que se transporta en él</text>
-  <rect x="20" y="36" width="322" height="216" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
+  <rect x="20" y="36" width="322" height="222" rx="5" fill="none" stroke="#0055a0" stroke-width="2"/>
   <rect x="32" y="46" width="298" height="24" rx="3" fill="#0055a0"/>
   <text x="181" y="62" text-anchor="middle" class="t13">CANALES DE CONTROL (CCH)</text>
   <rect x="32" y="78" width="298" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
@@ -708,9 +708,9 @@
   <rect x="32" y="192" width="298" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
   <text x="44" y="206" class="b13">STCH · robo de capacidad</text>
   <text x="44" y="219" class="d13">Señalización urgente sobre el canal de tráfico</text>
-  <rect x="32" y="230" width="298" height="14" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
-  <text x="44" y="241" class="d13">LCH · linealización de los amplificadores</text>
-  <rect x="354" y="36" width="314" height="216" rx="5" fill="none" stroke="#2d8659" stroke-width="2"/>
+  <rect x="32" y="230" width="298" height="20" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
+  <text x="44" y="243" class="d13">LCH · linealización de los amplificadores</text>
+  <rect x="354" y="36" width="314" height="222" rx="5" fill="none" stroke="#2d8659" stroke-width="2"/>
   <rect x="366" y="46" width="290" height="24" rx="3" fill="#2d8659"/>
   <text x="511" y="62" text-anchor="middle" class="t13">CANALES DE TRÁFICO (TCH)</text>
   <rect x="366" y="78" width="290" height="38" rx="3" fill="#2d8659"/>
@@ -725,11 +725,11 @@
   <rect x="366" y="198" width="290" height="32" rx="3" fill="#f1f5f9" stroke="#c9d6e2"/>
   <text x="378" y="212" class="b13">TCH/2,4 · datos con protección alta</text>
   <text x="378" y="225" class="d13">Para el borde de la cobertura</text>
-  <text x="378" y="245" class="d13">Con los 4 intervalos agregados: hasta 28,8 kbit/s</text>
-  <rect x="20" y="262" width="648" height="38" rx="4" fill="#e89822"/>
-  <text x="36" y="278" class="t13">EL CANAL DE CONTROL PRINCIPAL (MCCH)</text>
-  <text x="36" y="293" class="s13">Es el canal lógico de control que la estación base mantiene permanentemente activo en el intervalo 1 de la portadora principal</text>
-  <text x="670" y="320" text-anchor="end" class="n13">[Fuente: elaboración propia sobre ETSI EN 300 392-2, capa MAC]</text>
+  <text x="378" y="246" class="d13">Con los 4 intervalos agregados: hasta 28,8 kbit/s</text>
+  <rect x="20" y="268" width="648" height="38" rx="4" fill="#e89822"/>
+  <text x="36" y="284" class="t13">EL CANAL DE CONTROL PRINCIPAL (MCCH)</text>
+  <text x="36" y="299" class="s13">Es el canal lógico de control que la estación base mantiene permanentemente activo en el intervalo 1 de la portadora principal</text>
+  <text x="670" y="326" text-anchor="end" class="n13">[Fuente: elaboración propia sobre ETSI EN 300 392-2, capa MAC]</text>
 </svg>
 ```
 
@@ -830,8 +830,8 @@
   <text x="608" y="74" text-anchor="middle" class="m15">SDS TIPO 4</text>
   <text x="608" y="91" text-anchor="middle" class="s15">hasta 2.047 bits</text>
   <text x="608" y="105" text-anchor="middle" class="s15">de usuario</text>
-  <rect x="20" y="124" width="648" height="34" rx="4" fill="#e89822"/>
-  <text x="36" y="140" class="t15">SDS-TL · capa de transporte sobre el tipo 4</text>
+  <rect x="20" y="124" width="648" height="36" rx="4" fill="#e89822"/>
+  <text x="36" y="139" class="t15">SDS-TL · capa de transporte sobre el tipo 4</text>
   <text x="36" y="153" class="s15">Añade identificador de protocolo de aplicación, acuse de recibo y encadenamiento. Es la base del texto y del envío de posición (LIP)</text>
   <text x="20" y="182" class="k15">LOS DOS MODOS DE DATOS DE MAYOR VOLUMEN</text>
   <rect x="20" y="190" width="314" height="112" rx="5" fill="none" stroke="#d13c3c" stroke-width="2"/>
